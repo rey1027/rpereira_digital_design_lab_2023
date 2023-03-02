@@ -23,9 +23,9 @@ VSYCd;68lE1=NKz`5K9>610
 !s100 6g@zc9BhS[OfXO9RM[lMi1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1677724565
+Z7 !s110 1677728570
 !i10b 1
-Z8 !s108 1677724565.000000
+Z8 !s108 1677728570.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/and_gate.vhd|
 Z10 !s107 D:/1bitadder/and_gate.vhd|
 !i113 1
@@ -64,11 +64,11 @@ V4B>I4HnDJSO9KRDzC^DHB1
 !s100 `1aj8feN<?aUY4__e?j_B2
 R6
 31
-Z16 !s110 1677724564
+R7
 !i10b 1
-Z17 !s108 1677724564.000000
-Z18 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/bitadder.vhd|
-Z19 !s107 D:/1bitadder/bitadder.vhd|
+Z16 !s108 1677728569.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/bitadder.vhd|
+Z18 !s107 D:/1bitadder/bitadder.vhd|
 !i113 1
 R11
 R12
@@ -83,22 +83,22 @@ VaV6OWa7><ZbQ[n4OUKUnU2
 !s100 cC:QzIK=;0gOgX2i;aPLE3
 R6
 31
-R16
+R7
 !i10b 1
+R16
 R17
 R18
-R19
 !i113 1
 R11
 R12
 Efull_adder_4bit
-Z20 w1677604367
+Z19 w1677604367
 R2
 R3
 !i122 4
 R0
-Z21 8D:/1bitadder/full_adder_4bit.vhd
-Z22 FD:/1bitadder/full_adder_4bit.vhd
+Z20 8D:/1bitadder/full_adder_4bit.vhd
+Z21 FD:/1bitadder/full_adder_4bit.vhd
 l0
 L4 1
 V=R=QIBGbACJ8U7XgAl4`]2
@@ -108,8 +108,8 @@ R6
 R7
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/full_adder_4bit.vhd|
-Z24 !s107 D:/1bitadder/full_adder_4bit.vhd|
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/full_adder_4bit.vhd|
+Z23 !s107 D:/1bitadder/full_adder_4bit.vhd|
 !i113 1
 R11
 R12
@@ -127,19 +127,19 @@ R6
 R7
 !i10b 1
 R8
+R22
 R23
-R24
 !i113 1
 R11
 R12
 Eor_gate
-Z25 w1677603444
+Z24 w1677603444
 R2
 R3
 !i122 3
 R0
-Z26 8D:/1bitadder/or_gate.vhd
-Z27 FD:/1bitadder/or_gate.vhd
+Z25 8D:/1bitadder/or_gate.vhd
+Z26 FD:/1bitadder/or_gate.vhd
 l0
 L4 1
 VmV<FAKOFCjC^Pg_S]60b62
@@ -149,8 +149,8 @@ R6
 R7
 !i10b 1
 R8
-Z28 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/or_gate.vhd|
-Z29 !s107 D:/1bitadder/or_gate.vhd|
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/or_gate.vhd|
+Z28 !s107 D:/1bitadder/or_gate.vhd|
 !i113 1
 R11
 R12
@@ -160,7 +160,7 @@ R3
 DEx4 work 7 or_gate 0 22 mV<FAKOFCjC^Pg_S]60b62
 !i122 3
 l13
-Z30 L11 5
+Z29 L11 5
 Vc6AB:_]f896_BmBRF5nMf1
 !s100 4IAnaI<oAgod0Z<cAROQO2
 R6
@@ -168,19 +168,19 @@ R6
 R7
 !i10b 1
 R8
+R27
 R28
-R29
 !i113 1
 R11
 R12
 Etestbench_1
-Z31 w1677724525
+Z30 w1677724525
 R2
 R3
 !i122 5
 R0
-Z32 8D:/1bitadder/testbench_1.vhd
-Z33 FD:/1bitadder/testbench_1.vhd
+Z31 8D:/1bitadder/testbench_1.vhd
+Z32 FD:/1bitadder/testbench_1.vhd
 l0
 L4 1
 V9_naOOGBm>WePA>2=X0[c0
@@ -190,7 +190,7 @@ R6
 R7
 !i10b 1
 R8
-Z34 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/testbench_1.vhd|
+Z33 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/testbench_1.vhd|
 !s107 D:/1bitadder/testbench_1.vhd|
 !i113 1
 R11
@@ -209,30 +209,30 @@ R6
 R7
 !i10b 1
 R8
-R34
-Z35 !s107 D:/1bitadder/testbench_1.vhd|
+R33
+Z34 !s107 D:/1bitadder/testbench_1.vhd|
 !i113 1
 R11
 R12
 Exor_gate
-Z36 w1677603246
+Z35 w1677603246
 R2
 R3
 !i122 1
 R0
-Z37 8D:/1bitadder/xor_gate.vhd
-Z38 FD:/1bitadder/xor_gate.vhd
+Z36 8D:/1bitadder/xor_gate.vhd
+Z37 FD:/1bitadder/xor_gate.vhd
 l0
 L4 1
 VdbSZRT1Ne[<>fZdBf5`cO3
 !s100 ifQH^Fhb0EUJVjZ><^nnB3
 R6
 31
-R16
+R7
 !i10b 1
-R17
-Z39 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/xor_gate.vhd|
-Z40 !s107 D:/1bitadder/xor_gate.vhd|
+R8
+Z38 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/xor_gate.vhd|
+Z39 !s107 D:/1bitadder/xor_gate.vhd|
 !i113 1
 R11
 R12
@@ -242,16 +242,16 @@ R3
 DEx4 work 8 xor_gate 0 22 dbSZRT1Ne[<>fZdBf5`cO3
 !i122 1
 l13
-R30
+R29
 VHRdJnFFB<1LFFV:`h689?3
 !s100 6cFTej5@GgWo[Ki0_T=eh0
 R6
 31
-R16
+R7
 !i10b 1
-R17
+R8
+R38
 R39
-R40
 !i113 1
 R11
 R12
