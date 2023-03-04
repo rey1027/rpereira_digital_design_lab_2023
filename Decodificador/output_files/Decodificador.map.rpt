@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Decodificador
-Wed Mar  1 20:02:42 2023
+Fri Mar  3 21:46:58 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -10,7 +10,8 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  5. Port Connectivity Checks: "decodificador:D1"
+  6. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Mar  1 20:02:42 2023          ;
+; Analysis & Elaboration Status ; Successful - Fri Mar  3 21:46:58 2023          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; Decodificador                                  ;
-; Top-level Entity Name         ; decodificador                                  ;
+; Top-level Entity Name         ; main                                           ;
 ; Family                        ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
 ; Total registers               ; N/A until Partition Merge                      ;
@@ -74,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; decodificador      ; Decodificador      ;
+; Top-level entity name                                                           ; main               ; Decodificador      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -155,13 +156,22 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decodificador:D1"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; S0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Mar  1 20:02:36 2023
+    Info: Processing started: Fri Mar  3 21:46:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Decodificador -c Decodificador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -169,11 +179,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file decodif
     Info (12023): Found entity 1: decodificador File: C:/Users/Rachel/Desktop/Decodificador/decodificador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench_d.sv
     Info (12023): Found entity 1: testbench_D File: C:/Users/Rachel/Desktop/Decodificador/testbench_D.sv Line: 1
-Info (12127): Elaborating entity "decodificador" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_7seg.sv
+    Info (12023): Found entity 1: bcd_to_7seg File: C:/Users/Rachel/Desktop/Decodificador/bcd_to_7seg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main.sv
+    Info (12023): Found entity 1: main File: C:/Users/Rachel/Desktop/Decodificador/main.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main_tb.sv
+    Info (12023): Found entity 1: main_tb File: C:/Users/Rachel/Desktop/Decodificador/main_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_7seg_tb.sv
+    Info (12023): Found entity 1: bcd_to_7seg_tb File: C:/Users/Rachel/Desktop/Decodificador/bcd_to_7seg_tb.sv Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:D1" File: C:/Users/Rachel/Desktop/Decodificador/main.sv Line: 6
+Info (12128): Elaborating entity "bcd_to_7seg" for hierarchy "bcd_to_7seg:BD7" File: C:/Users/Rachel/Desktop/Decodificador/main.sv Line: 8
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Wed Mar  1 20:02:42 2023
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Fri Mar  3 21:46:58 2023
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:06
 
 
