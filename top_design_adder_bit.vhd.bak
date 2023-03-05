@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity top_design_adder_bit is
+    port(
+	 SWO: in std_logic;
+	 SW1: in std_logic;
+	 SW2: in std_logic;
+	 SW3: in std_logic;
+	 SW4: in std_logic;
+	 SW5: in std_logic;
+	 SW6: in std_logic;
+	 SW7: in std_logic;
+	 HEX0: out std_logic;
+	 HEX1: out std_logic;
+	 HEX2: out std_logic;
+	 HEX3: out std_logic;
+	 HEX4: out std_logic;
+	 );
+end top_design_adder_bit;
+
+architecture design of top_design_adder_bit is 
+
+component full_adder_4bit is
+    port(a: in std_logic_vector(3 downto 0);
+         b: in std_logic_vector(3 downto 0);
+         cin: in std_logic;
+         sum: out std_logic_vector(3 downto 0);
+         cout: out std_logic);
+end component;
+
+begin
+port map (
+			a(0)=> SWO;
+			a(1)=> SW1;
+			a(2)=> SW2;
+			a(3)=> SW3;
+			b(0)=> SW4;
+			b(1)=> SW5;
+			b(2)=> SW6;
+			b(3)=> SW7;
+);
+end design;
+ 

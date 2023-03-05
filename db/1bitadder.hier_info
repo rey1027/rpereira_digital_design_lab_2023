@@ -1,4 +1,24 @@
-|full_adder_4bit
+|final_design
+a[0] => full_adder_4bit:full_4bit_adder0.a[0]
+a[1] => full_adder_4bit:full_4bit_adder0.a[1]
+a[2] => full_adder_4bit:full_4bit_adder0.a[2]
+a[3] => full_adder_4bit:full_4bit_adder0.a[3]
+b[0] => full_adder_4bit:full_4bit_adder0.b[0]
+b[1] => full_adder_4bit:full_4bit_adder0.b[1]
+b[2] => full_adder_4bit:full_4bit_adder0.b[2]
+b[3] => full_adder_4bit:full_4bit_adder0.b[3]
+cin => full_adder_4bit:full_4bit_adder0.cin
+cout << full_adder_4bit:full_4bit_adder0.cout
+seg7[0] << to_7seg:drv_7seg.seg7[0]
+seg7[1] << to_7seg:drv_7seg.seg7[1]
+seg7[2] << to_7seg:drv_7seg.seg7[2]
+seg7[3] << to_7seg:drv_7seg.seg7[3]
+seg7[4] << to_7seg:drv_7seg.seg7[4]
+seg7[5] << to_7seg:drv_7seg.seg7[5]
+seg7[6] << to_7seg:drv_7seg.seg7[6]
+
+
+|final_design|full_adder_4bit:full_4bit_adder0
 a[0] => bitadder:fa0.a
 a[1] => bitadder:fa1.a
 a[2] => bitadder:fa2.a
@@ -8,14 +28,14 @@ b[1] => bitadder:fa1.b
 b[2] => bitadder:fa2.b
 b[3] => bitadder:fa3.b
 cin => bitadder:fa0.cin
-sum[0] << bitadder:fa0.sum
-sum[1] << bitadder:fa1.sum
-sum[2] << bitadder:fa2.sum
-sum[3] << bitadder:fa3.sum
-cout << bitadder:fa3.cout
+sum[0] <= bitadder:fa0.sum
+sum[1] <= bitadder:fa1.sum
+sum[2] <= bitadder:fa2.sum
+sum[3] <= bitadder:fa3.sum
+cout <= bitadder:fa3.cout
 
 
-|full_adder_4bit|bitadder:fa0
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0
 a => xor_gate:xor1.k
 a => and_gate:and1.a
 a => and_gate:and2.a
@@ -29,39 +49,39 @@ sum <= xor_gate:xor1.f
 cout <= or_gate:or1.z
 
 
-|full_adder_4bit|bitadder:fa0|xor_gate:xor1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0|xor_gate:xor1
 k => f.IN0
 d => f.IN1
 e => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa0|and_gate:and1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0|and_gate:and1
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa0|and_gate:and2
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0|and_gate:and2
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa0|and_gate:and3
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0|and_gate:and3
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa0|or_gate:or1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa0|or_gate:or1
 g => z.IN0
 h => z.IN1
 i => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1
 a => xor_gate:xor1.k
 a => and_gate:and1.a
 a => and_gate:and2.a
@@ -75,39 +95,39 @@ sum <= xor_gate:xor1.f
 cout <= or_gate:or1.z
 
 
-|full_adder_4bit|bitadder:fa1|xor_gate:xor1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1|xor_gate:xor1
 k => f.IN0
 d => f.IN1
 e => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa1|and_gate:and1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1|and_gate:and1
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa1|and_gate:and2
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1|and_gate:and2
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa1|and_gate:and3
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1|and_gate:and3
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa1|or_gate:or1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa1|or_gate:or1
 g => z.IN0
 h => z.IN1
 i => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa2
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2
 a => xor_gate:xor1.k
 a => and_gate:and1.a
 a => and_gate:and2.a
@@ -121,39 +141,39 @@ sum <= xor_gate:xor1.f
 cout <= or_gate:or1.z
 
 
-|full_adder_4bit|bitadder:fa2|xor_gate:xor1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2|xor_gate:xor1
 k => f.IN0
 d => f.IN1
 e => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa2|and_gate:and1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2|and_gate:and1
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa2|and_gate:and2
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2|and_gate:and2
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa2|and_gate:and3
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2|and_gate:and3
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa2|or_gate:or1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa2|or_gate:or1
 g => z.IN0
 h => z.IN1
 i => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa3
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3
 a => xor_gate:xor1.k
 a => and_gate:and1.a
 a => and_gate:and2.a
@@ -167,35 +187,73 @@ sum <= xor_gate:xor1.f
 cout <= or_gate:or1.z
 
 
-|full_adder_4bit|bitadder:fa3|xor_gate:xor1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3|xor_gate:xor1
 k => f.IN0
 d => f.IN1
 e => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa3|and_gate:and1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3|and_gate:and1
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa3|and_gate:and2
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3|and_gate:and2
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa3|and_gate:and3
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3|and_gate:and3
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|full_adder_4bit|bitadder:fa3|or_gate:or1
+|final_design|full_adder_4bit:full_4bit_adder0|bitadder:fa3|or_gate:or1
 g => z.IN0
 h => z.IN1
 i => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_design|to_7seg:drv_7seg
+A[0] => Mux0.IN19
+A[0] => Mux1.IN19
+A[0] => Mux2.IN19
+A[0] => Mux3.IN19
+A[0] => Mux4.IN19
+A[0] => Mux5.IN19
+A[0] => Mux6.IN19
+A[1] => Mux0.IN18
+A[1] => Mux1.IN18
+A[1] => Mux2.IN18
+A[1] => Mux3.IN18
+A[1] => Mux4.IN18
+A[1] => Mux5.IN18
+A[1] => Mux6.IN18
+A[2] => Mux0.IN17
+A[2] => Mux1.IN17
+A[2] => Mux2.IN17
+A[2] => Mux3.IN17
+A[2] => Mux4.IN17
+A[2] => Mux5.IN17
+A[2] => Mux6.IN17
+A[3] => Mux0.IN16
+A[3] => Mux1.IN16
+A[3] => Mux2.IN16
+A[3] => Mux3.IN16
+A[3] => Mux4.IN16
+A[3] => Mux5.IN16
+A[3] => Mux6.IN16
+seg7[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

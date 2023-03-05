@@ -1,5 +1,5 @@
 Analysis & Elaboration report for 1bitadder
-Wed Mar  1 21:42:22 2023
+Sun Mar  5 12:12:18 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Mar  1 21:42:22 2023          ;
+; Analysis & Elaboration Status ; Successful - Sun Mar  5 12:12:18 2023          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; 1bitadder                                      ;
-; Top-level Entity Name         ; full_adder_4bit                                ;
+; Top-level Entity Name         ; final_design                                   ;
 ; Family                        ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
 ; Total registers               ; N/A until Partition Merge                      ;
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; full_adder_4bit    ; 1bitadder          ;
+; Top-level entity name                                                           ; final_design       ; 1bitadder          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Mar  1 21:42:15 2023
+    Info: Processing started: Sun Mar  5 12:12:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 1bitadder -c 1bitadder --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -183,15 +183,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file full_ad
 Info (12021): Found 2 design units, including 1 entities, in source file testbench_1.vhd
     Info (12022): Found design unit 1: testbench_1-sim File: D:/1bitadder/testbench_1.vhd Line: 7
     Info (12023): Found entity 1: testbench_1 File: D:/1bitadder/testbench_1.vhd Line: 4
-Info (12127): Elaborating entity "full_adder_4bit" for the top level hierarchy
-Info (12128): Elaborating entity "bitadder" for hierarchy "bitadder:fa0" File: D:/1bitadder/full_adder_4bit.vhd Line: 27
-Info (12128): Elaborating entity "xor_gate" for hierarchy "bitadder:fa0|xor_gate:xor1" File: D:/1bitadder/bitadder.vhd Line: 40
-Info (12128): Elaborating entity "and_gate" for hierarchy "bitadder:fa0|and_gate:and1" File: D:/1bitadder/bitadder.vhd Line: 41
-Info (12128): Elaborating entity "or_gate" for hierarchy "bitadder:fa0|or_gate:or1" File: D:/1bitadder/bitadder.vhd Line: 44
+Info (12021): Found 2 design units, including 1 entities, in source file to_7seg.vhd
+    Info (12022): Found design unit 1: to_7seg-Behavioral File: D:/1bitadder/to_7seg.vhd Line: 10
+    Info (12023): Found entity 1: to_7seg File: D:/1bitadder/to_7seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file final_design.vhd
+    Info (12022): Found design unit 1: final_design-final_design_1 File: D:/1bitadder/final_design.vhd Line: 10
+    Info (12023): Found entity 1: final_design File: D:/1bitadder/final_design.vhd Line: 3
+Info (12127): Elaborating entity "final_design" for the top level hierarchy
+Info (12128): Elaborating entity "full_adder_4bit" for hierarchy "full_adder_4bit:full_4bit_adder0" File: D:/1bitadder/final_design.vhd Line: 15
+Info (12128): Elaborating entity "bitadder" for hierarchy "full_adder_4bit:full_4bit_adder0|bitadder:fa0" File: D:/1bitadder/full_adder_4bit.vhd Line: 27
+Info (12128): Elaborating entity "xor_gate" for hierarchy "full_adder_4bit:full_4bit_adder0|bitadder:fa0|xor_gate:xor1" File: D:/1bitadder/bitadder.vhd Line: 40
+Info (12128): Elaborating entity "and_gate" for hierarchy "full_adder_4bit:full_4bit_adder0|bitadder:fa0|and_gate:and1" File: D:/1bitadder/bitadder.vhd Line: 41
+Info (12128): Elaborating entity "or_gate" for hierarchy "full_adder_4bit:full_4bit_adder0|bitadder:fa0|or_gate:or1" File: D:/1bitadder/bitadder.vhd Line: 44
+Info (12128): Elaborating entity "to_7seg" for hierarchy "to_7seg:drv_7seg" File: D:/1bitadder/final_design.vhd Line: 17
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Wed Mar  1 21:42:23 2023
+    Info: Processing ended: Sun Mar  5 12:12:18 2023
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 

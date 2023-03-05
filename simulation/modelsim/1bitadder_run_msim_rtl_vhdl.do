@@ -55,6 +55,8 @@ vcom -93 -work work {D:/1bitadder/xor_gate.vhd}
 vcom -93 -work work {D:/1bitadder/and_gate.vhd}
 vcom -93 -work work {D:/1bitadder/or_gate.vhd}
 vcom -93 -work work {D:/1bitadder/full_adder_4bit.vhd}
+vcom -93 -work work {D:/1bitadder/to_7seg.vhd}
+vcom -93 -work work {D:/1bitadder/final_design.vhd}
 
 vcom -93 -work work {D:/1bitadder/testbench_1.vhd}
 

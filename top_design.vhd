@@ -1,0 +1,17 @@
+library IEEE; use IEEE.STD_LOGIC_1164.all;
+
+entity top_design is 
+	port(Z: in STD_LOGIC;
+		  A,B: in STD_LOGIC_VECTOR(3 downto 0);
+		  C: out STD_LOGIC;
+		  Q: out STD_LOGIC_VECTOR(6 downto 0));
+end;
+architecture synth of top_design is 
+signal S: STD_LOGIC_VECTOR(3 downto 0);
+signal negQ: STD_LOGIC_VECTOR(6 downto 0);
+
+begin
+	full_4bit_adder0: entity work.full_adder_4bit port map(cin=>Z, a=>A, b=>B,sum=>S, cout=>C); 
+	drv_7seg: entity work.hex_display port map(N=>S,Q=>negQ); 
+	Q <= not negQ;
+end;
