@@ -28,6 +28,6 @@ begin
 	dut: final_design port map(a,b,cin,cout,seg7);
 	process begin 
 
-a(0)<='1'; a(1)<= '1'; a(2)<='1'; a(3)<= '1'; b(0)<='1'; b(1)<='1'; b(2)<='1'; b(3)<='1'; cin<='1'; wait for 10 ns;	
+a(0)<='1'; a(1)<= '0'; a(2)<='0'; a(3)<= '0'; b(0)<='0'; b(1)<='0'; b(2)<='0'; b(3)<='0'; cin<='0'; wait for 10 ns;	
 	end process; 
 end;

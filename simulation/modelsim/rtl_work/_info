@@ -23,9 +23,9 @@ VSYCd;68lE1=NKz`5K9>610
 !s100 6g@zc9BhS[OfXO9RM[lMi1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1678039967
+Z7 !s110 1678133788
 !i10b 1
-Z8 !s108 1678039967.000000
+Z8 !s108 1678133788.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/and_gate.vhd|
 Z10 !s107 D:/1bitadder/and_gate.vhd|
 !i113 1
@@ -92,7 +92,7 @@ R17
 R11
 R12
 Efinal_design
-Z18 w1678039681
+Z18 w1678133363
 R2
 R3
 !i122 6
@@ -105,17 +105,17 @@ VIeK53e?]F]fLze13fBdlO1
 !s100 [lRR@8:jC<Ag?zSE^96U=1
 R6
 31
-R7
+Z21 !s110 1678133789
 !i10b 1
-R8
-Z21 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/final_design.vhd|
-Z22 !s107 D:/1bitadder/final_design.vhd|
+Z22 !s108 1678133789.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/final_design.vhd|
+Z24 !s107 D:/1bitadder/final_design.vhd|
 !i113 1
 R11
 R12
 Afinal_design_1
-Z23 DEx4 work 7 to_7seg 0 22 cPEi4P[TjLLfS@NUXIPaT1
-Z24 DEx4 work 15 full_adder_4bit 0 22 =R=QIBGbACJ8U7XgAl4`]2
+Z25 DEx4 work 7 to_7seg 0 22 cPEi4P[TjLLfS@NUXIPaT1
+Z26 DEx4 work 15 full_adder_4bit 0 22 =R=QIBGbACJ8U7XgAl4`]2
 R2
 R3
 DEx4 work 12 final_design 0 22 IeK53e?]F]fLze13fBdlO1
@@ -126,40 +126,40 @@ VofbJX0olFmFV5BzeSUalC1
 !s100 adP?V=;n_l_GVIZh??@>40
 R6
 31
-Z25 !s110 1678039968
-!i10b 1
-R8
 R21
+!i10b 1
 R22
+R23
+R24
 !i113 1
 R11
 R12
 Efull_adder_4bit
-Z26 w1677604367
+Z27 w1677604367
 R2
 R3
 !i122 4
 R0
-Z27 8D:/1bitadder/full_adder_4bit.vhd
-Z28 FD:/1bitadder/full_adder_4bit.vhd
+Z28 8D:/1bitadder/full_adder_4bit.vhd
+Z29 FD:/1bitadder/full_adder_4bit.vhd
 l0
 L4 1
 V=R=QIBGbACJ8U7XgAl4`]2
 !s100 nbn=zFFo5Wz85k8BOiOCQ1
 R6
 31
-R7
+R21
 !i10b 1
 R8
-Z29 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/full_adder_4bit.vhd|
-Z30 !s107 D:/1bitadder/full_adder_4bit.vhd|
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/full_adder_4bit.vhd|
+Z31 !s107 D:/1bitadder/full_adder_4bit.vhd|
 !i113 1
 R11
 R12
 Astruct
 R2
 R3
-R24
+R26
 !i122 4
 l25
 L12 23
@@ -167,22 +167,22 @@ V83<7fb?1FRA<LI?14e?<F0
 !s100 @[EE<8ccQnbP7T]Ne^4=32
 R6
 31
-R7
+R21
 !i10b 1
 R8
-R29
 R30
+R31
 !i113 1
 R11
 R12
 Eor_gate
-Z31 w1677603444
+Z32 w1677603444
 R2
 R3
 !i122 3
 R0
-Z32 8D:/1bitadder/or_gate.vhd
-Z33 FD:/1bitadder/or_gate.vhd
+Z33 8D:/1bitadder/or_gate.vhd
+Z34 FD:/1bitadder/or_gate.vhd
 l0
 L4 1
 VmV<FAKOFCjC^Pg_S]60b62
@@ -192,8 +192,8 @@ R6
 R7
 !i10b 1
 R8
-Z34 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/or_gate.vhd|
-Z35 !s107 D:/1bitadder/or_gate.vhd|
+Z35 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/or_gate.vhd|
+Z36 !s107 D:/1bitadder/or_gate.vhd|
 !i113 1
 R11
 R12
@@ -203,7 +203,7 @@ R3
 DEx4 work 7 or_gate 0 22 mV<FAKOFCjC^Pg_S]60b62
 !i122 3
 l13
-Z36 L11 5
+Z37 L11 5
 Vc6AB:_]f896_BmBRF5nMf1
 !s100 4IAnaI<oAgod0Z<cAROQO2
 R6
@@ -211,28 +211,28 @@ R6
 R7
 !i10b 1
 R8
-R34
 R35
+R36
 !i113 1
 R11
 R12
 Etestbench_1
-Z37 w1678039926
+Z38 w1678133754
 R2
 R3
 !i122 7
 R0
-Z38 8D:/1bitadder/testbench_1.vhd
-Z39 FD:/1bitadder/testbench_1.vhd
+Z39 8D:/1bitadder/testbench_1.vhd
+Z40 FD:/1bitadder/testbench_1.vhd
 l0
 L4 1
 V9_naOOGBm>WePA>2=X0[c0
 !s100 NgX[?<z3mEkVWS>gBS75^3
 R6
 31
-R25
+R21
 !i10b 1
-Z40 !s108 1678039968.000000
+R22
 Z41 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/testbench_1.vhd|
 !s107 D:/1bitadder/testbench_1.vhd|
 !i113 1
@@ -245,20 +245,20 @@ DEx4 work 11 testbench_1 0 22 9_naOOGBm>WePA>2=X0[c0
 !i122 7
 l27
 L7 27
-V1H[L^z:<lEoGFmnU4V8U80
-!s100 Q0djRP6Bdg19moT4^l9hE2
+VXNTL8Y`Ve<GedlC7ERWVL3
+!s100 W=e=NgZNz[7GbZZ=AAYY@2
 R6
 31
-R25
+R21
 !i10b 1
-R40
+R22
 R41
 Z42 !s107 D:/1bitadder/testbench_1.vhd|
 !i113 1
 R11
 R12
 Eto_7seg
-Z43 w1678037110
+Z43 w1678133123
 R2
 R3
 !i122 5
@@ -271,9 +271,9 @@ VcPEi4P[TjLLfS@NUXIPaT1
 !s100 YUY87SmEcOCnHcD4dKcd=2
 R6
 31
-R7
+R21
 !i10b 1
-R8
+R22
 Z46 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/to_7seg.vhd|
 Z47 !s107 D:/1bitadder/to_7seg.vhd|
 !i113 1
@@ -282,17 +282,17 @@ R12
 Abehavioral
 R2
 R3
-R23
+R25
 !i122 5
 l12
-L10 29
-Va3M5=RemffMI;FZL0UOhZ3
-!s100 3ca@4bSiN1>MXl:PdX:K_2
+L10 44
+VdbZ]^?:8I2A3X8QW;V>4R2
+!s100 6E5BoPaB3K0]Sz3<LTASl2
 R6
 31
-R7
+R21
 !i10b 1
-R8
+R22
 R46
 R47
 !i113 1
@@ -326,7 +326,7 @@ R3
 DEx4 work 8 xor_gate 0 22 dbSZRT1Ne[<>fZdBf5`cO3
 !i122 1
 l13
-R36
+R37
 VHRdJnFFB<1LFFV:`h689?3
 !s100 6cFTej5@GgWo[Ki0_T=eh0
 R6
