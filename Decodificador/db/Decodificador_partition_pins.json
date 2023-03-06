@@ -32,7 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B",
+					"name" : "D",
 					"strict" : false
 				},
 				{
@@ -40,11 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "B",
 					"strict" : false
 				},
 				{
-					"name" : "D",
+					"name" : "C",
 					"strict" : false
 				}
 			]

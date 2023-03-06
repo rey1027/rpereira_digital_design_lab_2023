@@ -3,13 +3,13 @@ A => A.IN1
 B => B.IN1
 C => C.IN1
 D => D.IN1
-seg[0] <= bcd_to_7seg:BD7.seg
-seg[1] <= bcd_to_7seg:BD7.seg
-seg[2] <= bcd_to_7seg:BD7.seg
-seg[3] <= bcd_to_7seg:BD7.seg
-seg[4] <= bcd_to_7seg:BD7.seg
-seg[5] <= bcd_to_7seg:BD7.seg
-seg[6] <= bcd_to_7seg:BD7.seg
+seg[0] << bcd_to_7seg:BD7.seg
+seg[1] << bcd_to_7seg:BD7.seg
+seg[2] << bcd_to_7seg:BD7.seg
+seg[3] << bcd_to_7seg:BD7.seg
+seg[4] << bcd_to_7seg:BD7.seg
+seg[5] << bcd_to_7seg:BD7.seg
+seg[6] << bcd_to_7seg:BD7.seg
 
 
 |main|decodificador:D1
