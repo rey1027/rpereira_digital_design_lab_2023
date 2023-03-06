@@ -1,0 +1,16 @@
+module testbench();
+	parameter N = 6;
+	logic clk,reset,s,r,d,a;
+	logic [N-1:0] c;
+	
+	contador #(N) dut(clk,reset,s,r,d,a,c);
+	
+	initial begin
+		clk = 0; reset = 0; s = 1; r = 1; d = 1; a = 0; #5;
+		assert (c[N-1:0] === 0) $display("passed"); else $display("failed"); #5;
+		clk = 1; reset = 0; s = 1; r = 1; d = 1; a = 0; #5;
+		assert (c[N-1:0] === 0) $display("passed"); else $display("failed"); #5;
+	end
+	
+	
+endmodule
