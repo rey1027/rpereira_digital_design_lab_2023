@@ -1,0 +1,14 @@
+module main(input  logic clk,reset,s,r,d,a,
+				output logic [6:0] msb,lsb);
+				
+				logic [5:0] c;
+				logic [6:0] baux;
+				
+	contador #(6) cont(.clk(clk),.reset(reset),.s(s),.r(r),.d(d),.a(a),.c(c));
+	
+	baux = c[5:4];
+	
+	bintosseg ms(.bin(baux),.sseg(msb));
+	bintosseg ls(.bin(c[3:0]),.sseg(lsb));
+	
+endmodule

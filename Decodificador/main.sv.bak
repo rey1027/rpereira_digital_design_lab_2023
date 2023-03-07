@@ -1,0 +1,9 @@
+module main(A,B,C,D,a,b,c,d,e,f,g);
+	input A,B,C,D;
+	output a,b,c,d,e,f,g;
+	
+	decodificador(A,B,C,D,S0,S1,S2,S3,S4);
+	
+	bcd_to_7seg(S1,S2,S3,S4,a,b,c,d,e,f,g);
+	
+endmodule
