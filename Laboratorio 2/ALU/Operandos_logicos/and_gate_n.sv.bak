@@ -1,0 +1,4 @@
+
+module and_gate_n(input [N-1:0] inputs, output output);
+  assign output = &inputs;
+endmodule
