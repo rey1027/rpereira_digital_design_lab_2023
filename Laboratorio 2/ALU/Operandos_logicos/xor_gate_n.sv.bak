@@ -1,0 +1,4 @@
+module xor_gate_n #(parameter N = 6)
+	(input [N-1:0] inputs, output output_1);
+  assign output_1 = ^inputs;
+endmodule
