@@ -1,4 +1,4 @@
-module testbench();
+module testbench_s();
 // Definición de señales
   reg a, b, carry_in;
   wire sum, carry_out;

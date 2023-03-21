@@ -1,4 +1,4 @@
-module lrl_arithmetic#(parameter N=4) (input logic [N-1:0] data_in, input logic [4:0] shift_amount, output logic [N-1:0] data_out);
+module lrl_arithmetic#(parameter N=4) (input logic [N-1:0] data_in, input logic [N-1:0] shift_amount, output logic [N-1:0] data_out);
 
   logic [N-1:0] shifted_data;
 
