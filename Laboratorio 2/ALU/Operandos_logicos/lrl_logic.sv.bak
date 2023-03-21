@@ -1,4 +1,0 @@
-module lrl_logic #(parameter N = 6)
-	(input [N-1:0] a,b, output [N-1:0] output_1);
-  assign output_1 = a >> b;
-endmodule
