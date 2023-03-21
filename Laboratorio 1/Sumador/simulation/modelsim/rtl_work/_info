@@ -1,0 +1,341 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/1bitadder/simulation/modelsim
+Eand_gate
+Z1 w1677603354
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8D:/1bitadder/and_gate.vhd
+Z5 FD:/1bitadder/and_gate.vhd
+l0
+L4 1
+VSYCd;68lE1=NKz`5K9>610
+!s100 6g@zc9BhS[OfXO9RM[lMi1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1678133788
+!i10b 1
+Z8 !s108 1678133788.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/and_gate.vhd|
+Z10 !s107 D:/1bitadder/and_gate.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Asynth
+R2
+R3
+DEx4 work 8 and_gate 0 22 SYCd;68lE1=NKz`5K9>610
+!i122 2
+l12
+L10 5
+V>e5=]]MEaDPBS8Ug4n@Il3
+!s100 ;W?Em>AcjDS<mF64:ebZ42
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebitadder
+Z13 w1677603266
+R2
+R3
+!i122 0
+R0
+Z14 8D:/1bitadder/bitadder.vhd
+Z15 FD:/1bitadder/bitadder.vhd
+l0
+L4 1
+V4B>I4HnDJSO9KRDzC^DHB1
+!s100 `1aj8feN<?aUY4__e?j_B2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/bitadder.vhd|
+Z17 !s107 D:/1bitadder/bitadder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 bitadder 0 22 4B>I4HnDJSO9KRDzC^DHB1
+!i122 0
+l38
+L12 35
+VaV6OWa7><ZbQ[n4OUKUnU2
+!s100 cC:QzIK=;0gOgX2i;aPLE3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efinal_design
+Z18 w1678133363
+R2
+R3
+!i122 6
+R0
+Z19 8D:/1bitadder/final_design.vhd
+Z20 FD:/1bitadder/final_design.vhd
+l0
+L3 1
+VIeK53e?]F]fLze13fBdlO1
+!s100 [lRR@8:jC<Ag?zSE^96U=1
+R6
+31
+Z21 !s110 1678133789
+!i10b 1
+Z22 !s108 1678133789.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/final_design.vhd|
+Z24 !s107 D:/1bitadder/final_design.vhd|
+!i113 1
+R11
+R12
+Afinal_design_1
+Z25 DEx4 work 7 to_7seg 0 22 cPEi4P[TjLLfS@NUXIPaT1
+Z26 DEx4 work 15 full_adder_4bit 0 22 =R=QIBGbACJ8U7XgAl4`]2
+R2
+R3
+DEx4 work 12 final_design 0 22 IeK53e?]F]fLze13fBdlO1
+!i122 6
+l14
+L10 11
+VofbJX0olFmFV5BzeSUalC1
+!s100 adP?V=;n_l_GVIZh??@>40
+R6
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Efull_adder_4bit
+Z27 w1677604367
+R2
+R3
+!i122 4
+R0
+Z28 8D:/1bitadder/full_adder_4bit.vhd
+Z29 FD:/1bitadder/full_adder_4bit.vhd
+l0
+L4 1
+V=R=QIBGbACJ8U7XgAl4`]2
+!s100 nbn=zFFo5Wz85k8BOiOCQ1
+R6
+31
+R21
+!i10b 1
+R8
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/full_adder_4bit.vhd|
+Z31 !s107 D:/1bitadder/full_adder_4bit.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+R26
+!i122 4
+l25
+L12 23
+V83<7fb?1FRA<LI?14e?<F0
+!s100 @[EE<8ccQnbP7T]Ne^4=32
+R6
+31
+R21
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Eor_gate
+Z32 w1677603444
+R2
+R3
+!i122 3
+R0
+Z33 8D:/1bitadder/or_gate.vhd
+Z34 FD:/1bitadder/or_gate.vhd
+l0
+L4 1
+VmV<FAKOFCjC^Pg_S]60b62
+!s100 _8dG9cZcicg1And4mDaI<1
+R6
+31
+R7
+!i10b 1
+R8
+Z35 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/or_gate.vhd|
+Z36 !s107 D:/1bitadder/or_gate.vhd|
+!i113 1
+R11
+R12
+Asynth
+R2
+R3
+DEx4 work 7 or_gate 0 22 mV<FAKOFCjC^Pg_S]60b62
+!i122 3
+l13
+Z37 L11 5
+Vc6AB:_]f896_BmBRF5nMf1
+!s100 4IAnaI<oAgod0Z<cAROQO2
+R6
+31
+R7
+!i10b 1
+R8
+R35
+R36
+!i113 1
+R11
+R12
+Etestbench_1
+Z38 w1678133754
+R2
+R3
+!i122 7
+R0
+Z39 8D:/1bitadder/testbench_1.vhd
+Z40 FD:/1bitadder/testbench_1.vhd
+l0
+L4 1
+V9_naOOGBm>WePA>2=X0[c0
+!s100 NgX[?<z3mEkVWS>gBS75^3
+R6
+31
+R21
+!i10b 1
+R22
+Z41 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/testbench_1.vhd|
+!s107 D:/1bitadder/testbench_1.vhd|
+!i113 1
+R11
+R12
+Asim
+R2
+R3
+DEx4 work 11 testbench_1 0 22 9_naOOGBm>WePA>2=X0[c0
+!i122 7
+l27
+L7 27
+VXNTL8Y`Ve<GedlC7ERWVL3
+!s100 W=e=NgZNz[7GbZZ=AAYY@2
+R6
+31
+R21
+!i10b 1
+R22
+R41
+Z42 !s107 D:/1bitadder/testbench_1.vhd|
+!i113 1
+R11
+R12
+Eto_7seg
+Z43 w1678133123
+R2
+R3
+!i122 5
+R0
+Z44 8D:/1bitadder/to_7seg.vhd
+Z45 FD:/1bitadder/to_7seg.vhd
+l0
+L4 1
+VcPEi4P[TjLLfS@NUXIPaT1
+!s100 YUY87SmEcOCnHcD4dKcd=2
+R6
+31
+R21
+!i10b 1
+R22
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/to_7seg.vhd|
+Z47 !s107 D:/1bitadder/to_7seg.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+R25
+!i122 5
+l12
+L10 44
+VdbZ]^?:8I2A3X8QW;V>4R2
+!s100 6E5BoPaB3K0]Sz3<LTASl2
+R6
+31
+R21
+!i10b 1
+R22
+R46
+R47
+!i113 1
+R11
+R12
+Exor_gate
+Z48 w1677603246
+R2
+R3
+!i122 1
+R0
+Z49 8D:/1bitadder/xor_gate.vhd
+Z50 FD:/1bitadder/xor_gate.vhd
+l0
+L4 1
+VdbSZRT1Ne[<>fZdBf5`cO3
+!s100 ifQH^Fhb0EUJVjZ><^nnB3
+R6
+31
+R7
+!i10b 1
+R8
+Z51 !s90 -reportprogress|300|-93|-work|work|D:/1bitadder/xor_gate.vhd|
+Z52 !s107 D:/1bitadder/xor_gate.vhd|
+!i113 1
+R11
+R12
+Asynth
+R2
+R3
+DEx4 work 8 xor_gate 0 22 dbSZRT1Ne[<>fZdBf5`cO3
+!i122 1
+l13
+R37
+VHRdJnFFB<1LFFV:`h689?3
+!s100 6cFTej5@GgWo[Ki0_T=eh0
+R6
+31
+R7
+!i10b 1
+R8
+R51
+R52
+!i113 1
+R11
+R12
