@@ -1,0 +1,589 @@
+Analysis & Synthesis report for alu
+Thu Mar 23 00:57:29 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |main
+ 10. Parameter Settings for User Entity Instance: alu:alu1
+ 11. Parameter Settings for User Entity Instance: alu:alu1|sumador_n:sum1
+ 12. Parameter Settings for User Entity Instance: alu:alu1|restador_n:res1
+ 13. Parameter Settings for User Entity Instance: alu:alu1|lsl_arithmetic:lsl1
+ 14. Parameter Settings for User Entity Instance: alu:alu1|lrl_arithmetic:lrl1
+ 15. Parameter Settings for User Entity Instance: alu:alu1|and_gate_n:and1
+ 16. Parameter Settings for User Entity Instance: alu:alu1|or_gate_n:or1
+ 17. Parameter Settings for User Entity Instance: alu:alu1|xor_gate_n:xor1
+ 18. Parameter Settings for User Entity Instance: alu:alu1|lsl_logic:lsl2
+ 19. Parameter Settings for User Entity Instance: alu:alu1|lrl_logic:lrl2
+ 20. Parameter Settings for User Entity Instance: alu:alu1|n_not_gate:not1
+ 21. Parameter Settings for User Entity Instance: alu:alu1|mux_:mux1
+ 22. Parameter Settings for User Entity Instance: alu:alu1|zeroflag:zf
+ 23. Port Connectivity Checks: "alu:alu1|restador_n:res1"
+ 24. Port Connectivity Checks: "alu:alu1|sumador_n:sum1"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Mar 23 00:57:29 2023          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; alu                                            ;
+; Top-level Entity Name           ; main                                           ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 0                                              ;
+; Total pins                      ; 23                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; main               ; alu                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                           ;
++-------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                      ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                  ; Library ;
++-------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../bcd_to_7seg.sv                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/bcd_to_7seg.sv                                     ;         ;
+; ../Operandos_logicos/xor_gate_n.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/xor_gate_n.sv                    ;         ;
+; ../Operandos_logicos/xor_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/xor_gate.sv                      ;         ;
+; ../Operandos_logicos/or_gate_n.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/or_gate_n.sv                     ;         ;
+; ../Operandos_logicos/or_gate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/or_gate.sv                       ;         ;
+; ../Operandos_logicos/n_not_gate.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/n_not_gate.sv                    ;         ;
+; ../Operandos_logicos/lsl_logic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lsl_logic.sv                     ;         ;
+; ../Operandos_logicos/lsl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lsl_arithmetic.sv                ;         ;
+; ../Operandos_logicos/lrl_logic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lrl_logic.sv                     ;         ;
+; ../Operandos_logicos/lrl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lrl_arithmetic.sv                ;         ;
+; ../Operandos_logicos/and_gate_n.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/and_gate_n.sv                    ;         ;
+; ../Operandos_logicos/and_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/and_gate.sv                      ;         ;
+; ../Operaciones aritmetricas/Sumador/sumador_n.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv      ;         ;
+; ../Operaciones aritmetricas/Sumador/sumador_1bit.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv   ;         ;
+; ../Operaciones aritmetricas/Restador/restador_n.sv    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_n.sv    ;         ;
+; ../Operaciones aritmetricas/Restador/restador_1bit.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv ;         ;
+; zeroflag.sv                                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/zeroflag.sv                                    ;         ;
+; mux_.sv                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/mux_.sv                                        ;         ;
+; alu.sv                                                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv                                         ;         ;
+; main.sv                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/main.sv                                        ;         ;
+; neflag.sv                                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/neflag.sv                                      ;         ;
+; caflag.sv                                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/caflag.sv                                      ;         ;
++-------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 34         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 50         ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 18         ;
+;     -- 5 input functions                    ; 6          ;
+;     -- 4 input functions                    ; 23         ;
+;     -- <=3 input functions                  ; 3          ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 23         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; b[0]~input ;
+; Maximum fan-out                             ; 19         ;
+; Total fan-out                               ; 271        ;
+; Average fan-out                             ; 2.82       ;
++---------------------------------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name    ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------+--------------+
+; |main                                    ; 50 (0)              ; 0 (0)                     ; 0                 ; 0          ; 23   ; 0            ; |main                                                        ; main           ; work         ;
+;    |alu:alu1|                            ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1                                               ; alu            ; work         ;
+;       |caflag:cf|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|caflag:cf                                     ; caflag         ; work         ;
+;       |lrl_arithmetic:lrl1|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|lrl_arithmetic:lrl1                           ; lrl_arithmetic ; work         ;
+;       |lrl_logic:lrl2|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|lrl_logic:lrl2                                ; lrl_logic      ; work         ;
+;       |lsl_arithmetic:lsl1|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|lsl_arithmetic:lsl1                           ; lsl_arithmetic ; work         ;
+;       |mux_:mux1|                        ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|mux_:mux1                                     ; mux_           ; work         ;
+;       |neflag:nf|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|neflag:nf                                     ; neflag         ; work         ;
+;       |restador_n:res1|                  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|restador_n:res1                               ; restador_n     ; work         ;
+;          |restador_1bit:restador[1].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|restador_n:res1|restador_1bit:restador[1].dut ; restador_1bit  ; work         ;
+;          |restador_1bit:restador[2].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|restador_n:res1|restador_1bit:restador[2].dut ; restador_1bit  ; work         ;
+;       |sumador_n:sum1|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|sumador_n:sum1                                ; sumador_n      ; work         ;
+;          |sumador_1bit:sumador[1].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|sumador_n:sum1|sumador_1bit:sumador[1].dut    ; sumador_1bit   ; work         ;
+;          |sumador_1bit:sumador[2].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|sumador_n:sum1|sumador_1bit:sumador[2].dut    ; sumador_1bit   ; work         ;
+;       |zeroflag:zf|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|alu:alu1|zeroflag:zf                                   ; zeroflag       ; work         ;
+;    |bcd_to_7seg:BD7|                     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|bcd_to_7seg:BD7                                        ; bcd_to_7seg    ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |main ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; N              ; 4     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|sumador_n:sum1 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; n              ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|restador_n:res1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|lsl_arithmetic:lsl1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|lrl_arithmetic:lrl1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|and_gate_n:and1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|or_gate_n:or1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|xor_gate_n:xor1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|lsl_logic:lsl2 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|lrl_logic:lrl2 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|n_not_gate:not1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|mux_:mux1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu1|zeroflag:zf ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 4     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu1|restador_n:res1"                                                                                                                                                             ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; caIn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; caIn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu1|sumador_n:sum1"                                                                                                                                                              ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; caIn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; caIn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 53                          ;
+;     normal            ; 53                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 23                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 18                          ;
+; boundary_port         ; 23                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 5.11                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Thu Mar 23 00:57:22 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/bcd_to_7seg_tb.sv
+    Info (12023): Found entity 1: bcd_to_7seg_tb File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/bcd_to_7seg_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/bcd_to_7seg.sv
+    Info (12023): Found entity 1: bcd_to_7seg File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/bcd_to_7seg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/xor_gate_n.sv
+    Info (12023): Found entity 1: xor_gate_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/xor_gate_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/xor_gate.sv
+    Info (12023): Found entity 1: xor_gate File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/xor_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/testbench_alu.sv
+    Info (12023): Found entity 1: testbench_alu File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/testbench_alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/or_gate_n.sv
+    Info (12023): Found entity 1: or_gate_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/or_gate_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/or_gate.sv
+    Info (12023): Found entity 1: or_gate File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/or_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/n_not_gate.sv
+    Info (12023): Found entity 1: n_not_gate File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/n_not_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/lsl_logic.sv
+    Info (12023): Found entity 1: lsl_logic File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lsl_logic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/lsl_arithmetic.sv
+    Info (12023): Found entity 1: lsl_arithmetic File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lsl_arithmetic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/lrl_logic.sv
+    Info (12023): Found entity 1: lrl_logic File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lrl_logic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/lrl_arithmetic.sv
+    Info (12023): Found entity 1: lrl_arithmetic File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/lrl_arithmetic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/and_gate_n.sv
+    Info (12023): Found entity 1: and_gate_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/and_gate_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operandos_logicos/and_gate.sv
+    Info (12023): Found entity 1: and_gate File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/and_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/sumador/testbench_sumador_n.sv
+    Info (12023): Found entity 1: testbench_sumador_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/sumador/testbench.sv
+    Info (12023): Found entity 1: testbench_s File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/testbench.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/sumador/sumador_n.sv
+    Info (12023): Found entity 1: sumador_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/sumador/sumador_1bit.sv
+    Info (12023): Found entity 1: sumador_1bit File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/restador/tb_restador_n.sv
+    Info (12023): Found entity 1: tb_restador_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/tb_restador_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/restador/tb_restador.sv
+    Info (12023): Found entity 1: tb_restador File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/tb_restador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/restador/restador_n.sv
+    Info (12023): Found entity 1: restador_n File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/rachel/desktop/rpereira_digital_design_lab_2023/laboratorio 2/alu/operaciones aritmetricas/restador/restador_1bit.sv
+    Info (12023): Found entity 1: restador_1bit File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file zeroflag.sv
+    Info (12023): Found entity 1: zeroflag File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/zeroflag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/testbench.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_.sv
+    Info (12023): Found entity 1: mux_ File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/mux_.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main.sv
+    Info (12023): Found entity 1: main File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/main.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file neflag.sv
+    Info (12023): Found entity 1: neflag File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/neflag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file caflag.sv
+    Info (12023): Found entity 1: caflag File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/caflag.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at testbench_sumador_n.sv(9): created implicit net for "caOut" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(4): created implicit net for "N1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(6): created implicit net for "N3" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(7): created implicit net for "N4" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at tb_restador_n.sv(9): created implicit net for "caOut" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/tb_restador_n.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(5): created implicit net for "R1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(8): created implicit net for "R2" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(10): created implicit net for "R3" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 10
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/main.sv Line: 10
+Warning (10034): Output port "fo" at alu.sv(5) has no driver File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 5
+Info (12128): Elaborating entity "sumador_n" for hierarchy "alu:alu1|sumador_n:sum1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 22
+Info (12128): Elaborating entity "sumador_1bit" for hierarchy "alu:alu1|sumador_n:sum1|sumador_1bit:sumador[0].dut" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv Line: 10
+Info (12128): Elaborating entity "caflag" for hierarchy "alu:alu1|caflag:cf" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 23
+Info (12128): Elaborating entity "restador_n" for hierarchy "alu:alu1|restador_n:res1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 24
+Info (12128): Elaborating entity "restador_1bit" for hierarchy "alu:alu1|restador_n:res1|restador_1bit:restador[0].dut" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operaciones aritmetricas/Restador/restador_n.sv Line: 11
+Info (12128): Elaborating entity "neflag" for hierarchy "alu:alu1|neflag:nf" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 25
+Info (12128): Elaborating entity "lsl_arithmetic" for hierarchy "alu:alu1|lsl_arithmetic:lsl1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 26
+Info (12128): Elaborating entity "lrl_arithmetic" for hierarchy "alu:alu1|lrl_arithmetic:lrl1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 27
+Info (12128): Elaborating entity "and_gate_n" for hierarchy "alu:alu1|and_gate_n:and1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 28
+Info (12128): Elaborating entity "and_gate" for hierarchy "alu:alu1|and_gate_n:and1|and_gate:and_gen[0].and_inst" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/and_gate_n.sv Line: 16
+Info (12128): Elaborating entity "or_gate_n" for hierarchy "alu:alu1|or_gate_n:or1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 29
+Info (12128): Elaborating entity "or_gate" for hierarchy "alu:alu1|or_gate_n:or1|or_gate:or_gen[0].or_inst" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/or_gate_n.sv Line: 16
+Info (12128): Elaborating entity "xor_gate_n" for hierarchy "alu:alu1|xor_gate_n:xor1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 30
+Info (12128): Elaborating entity "xor_gate" for hierarchy "alu:alu1|xor_gate_n:xor1|xor_gate:xor_gen[0].xor_inst" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/Operandos_logicos/xor_gate_n.sv Line: 16
+Info (12128): Elaborating entity "lsl_logic" for hierarchy "alu:alu1|lsl_logic:lsl2" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 31
+Info (12128): Elaborating entity "lrl_logic" for hierarchy "alu:alu1|lrl_logic:lrl2" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 32
+Info (12128): Elaborating entity "n_not_gate" for hierarchy "alu:alu1|n_not_gate:not1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 33
+Info (12128): Elaborating entity "mux_" for hierarchy "alu:alu1|mux_:mux1" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 34
+Info (12128): Elaborating entity "zeroflag" for hierarchy "alu:alu1|zeroflag:zf" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/alu.sv Line: 35
+Warning (10240): Verilog HDL Always Construct warning at zeroflag.sv(4): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/zeroflag.sv Line: 4
+Info (10041): Inferred latch for "out" at zeroflag.sv(4) File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/zeroflag.sv Line: 4
+Info (12128): Elaborating entity "bcd_to_7seg" for hierarchy "bcd_to_7seg:BD7" File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/main.sv Line: 11
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "fo" is stuck at GND File: C:/Users/Rachel/Desktop/rpereira_digital_design_lab_2023/Laboratorio 2/ALU/alu/main.sv Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 50 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Thu Mar 23 00:57:29 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
+
+
