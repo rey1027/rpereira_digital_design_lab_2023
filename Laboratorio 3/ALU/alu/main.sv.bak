@@ -1,0 +1,5 @@
+module main #(parameter N = 4)(input logic [N-1 : 0] a,b,[3 : 0] s, output logic fn,fz,fo,fc,[N-1 : 0] seg);
+	
+	alu #(N) alu1(a,b,s,out,fn,fz,fo,fc);
+	bcd_to_7seg BD7(.bcd(out),.seg(seg));
+endmodule

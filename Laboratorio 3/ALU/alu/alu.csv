@@ -1,0 +1,45 @@
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+# File: C:\Users\Rachel\Desktop\rpereira_digital_design_lab_2023\Laboratorio 2\ALU\alu\alu.csv
+# Generated on: Tue Mar 21 11:45:19 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+a[3],Input,,,,2.5 V,,,,,,,,,,,,,
+a[2],Input,,,,2.5 V,,,,,,,,,,,,,
+a[1],Input,,,,2.5 V,,,,,,,,,,,,,
+a[0],Input,,,,2.5 V,,,,,,,,,,,,,
+b[3],Input,,,,2.5 V,,,,,,,,,,,,,
+b[2],Input,,,,2.5 V,,,,,,,,,,,,,
+b[1],Input,,,,2.5 V,,,,,,,,,,,,,
+b[0],Input,,,,2.5 V,,,,,,,,,,,,,
+fc,Output,,,,2.5 V,,,,,,,,,,,,,
+fn,Output,,,,2.5 V,,,,,,,,,,,,,
+fo,Output,,,,2.5 V,,,,,,,,,,,,,
+fz,Output,,,,2.5 V,,,,,,,,,,,,,
+s[3],Input,,,,2.5 V,,,,,,,,,,,,,
+s[2],Input,,,,2.5 V,,,,,,,,,,,,,
+s[1],Input,,,,2.5 V,,,,,,,,,,,,,
+s[0],Input,,,,2.5 V,,,,,,,,,,,,,
+seg[6],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[5],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[4],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[3],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[2],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[1],Output,,,,2.5 V,,,,,,,,,,,,,
+seg[0],Output,,,,2.5 V,,,,,,,,,,,,,
