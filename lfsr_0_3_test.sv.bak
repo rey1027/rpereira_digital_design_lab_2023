@@ -1,0 +1,40 @@
+module lfsr_0_3_test;
+
+ // Inputs
+ reg clk;
+ reg reset;
+
+ int rand_out;
+
+ // Instantiate the Unit Under Test (UUT)
+ lfsr_0_3 uut (
+ .clk(clk), 
+  .reset(reset), 
+ .rand_out(rand_out)
+ );
+ 
+ initial begin
+  clk = 0;
+  forever
+   #50 clk = ~clk;
+  end
+  
+ initial begin
+  // Initialize Inputs
+  
+  reset = 0;
+
+  // Wait 100 ns for global reset to finish
+  #100;
+      reset = 1;
+  #200;
+  reset = 0;
+  // Add stimulus here
+
+ end
+ 
+ initial begin
+ $display("clock rnd");
+ $monitor("%b,%b", clk, rand_out);
+ end      
+endmodule
