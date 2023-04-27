@@ -1,6 +1,8 @@
 module addAndmov(
 	 input logic [1:0] dir,
+	 input logic [15:0] score,
 	 input logic [15:0] inmatrix[0:3][0:3],
+	 output logic [15:0] new_score,
 	 output logic [15:0] outmatrix[0:3][0:3]
 );
 
@@ -10,7 +12,8 @@ integer value = 0;
 integer n = 0;
 
  
-always_comb begin
+always @* begin
+	new_score = score;
 	case(dir)
 		2'b00: begin // left
 			for (int i = 0; i < 4; i++) begin
@@ -26,6 +29,7 @@ always_comb begin
 					end else if (value != 0 && inmatrix[i][j] >= 2) begin
 						if (value == inmatrix[i][j]) begin
 							value = value + inmatrix[i][j];
+							new_score = new_score + value;
 							outmatrix[i][n-1] = value;
 							value = 0;
 						end else begin
@@ -56,6 +60,7 @@ always_comb begin
 						if (value == inmatrix[i][j]) begin
 							value = value + inmatrix[i][j];
 							outmatrix[i][n] = value;
+							new_score = new_score + value;
 							value = 0;
 						end else begin
 							outmatrix[i][n] = value;
@@ -85,6 +90,7 @@ always_comb begin
 						if (value == inmatrix[j][i]) begin
 							value = value + inmatrix[j][i];
 							outmatrix[n-1][i] = value;
+							new_score = new_score + value;
 							value = 0;
 						end else begin
 							outmatrix[n-1][i] = value;
@@ -114,6 +120,7 @@ always_comb begin
 						if (value == inmatrix[j][i]) begin
 							value = value + inmatrix[j][i];
 							outmatrix[n][i] = value;
+							new_score = new_score + value;
 							value = 0;
 						end else begin
 							outmatrix[n][i] = value;

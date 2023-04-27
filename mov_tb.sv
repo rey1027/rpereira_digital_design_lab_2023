@@ -9,9 +9,11 @@ integer col_sel;
 logic [15:0] matrix [0:3][0:3];
 logic winflag;
 logic [15:0] con;
+logic [15:0] score = 0;
+logic [15:0] new_score;
 
 
-addAndmov mov(dir, inmatrix, outmatrix);
+addAndmov mov(dir,score, inmatrix,new_score, outmatrix);
 matrix_4_4 dut(data_in,row_sel,col_sel,matrix);
 win win1(con,matrix,winflag);
 
@@ -87,17 +89,21 @@ initial begin
     #10;
 	 
 	 dir = 2'b00;
-	 inmatrix = matrix; #100;
-	 matrix = outmatrix; #100;
+	 inmatrix = matrix; #50;
+	 matrix = outmatrix; #50;
+	 score = new_score; # 50
 	 dir = 2'b11;
-	 inmatrix = matrix; #100;
-	 matrix = outmatrix; #100; 
+	 inmatrix = matrix; #50;
+	 matrix = outmatrix; #50;
+	 score = new_score; # 50
 	 dir = 2'b01;	 	 
-	 inmatrix = matrix; #100;
-	 matrix = outmatrix; #100;
+	 inmatrix = matrix; #50;
+	 matrix = outmatrix; #50;
+	 score = new_score; # 50
 	 dir = 2'b10;	 	 
-	 inmatrix = matrix; #100;
-	 matrix = outmatrix; #100;
+	 inmatrix = matrix; #50;
+	 matrix = outmatrix; #50;
+	 score = new_score; # 50
 	 
 	 con = 16'h0040; #10;
 	 
