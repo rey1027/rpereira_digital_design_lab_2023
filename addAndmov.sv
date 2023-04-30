@@ -1,8 +1,8 @@
 module addAndmov(
-	 input logic [1:0] dir,
-	 input logic [15:0] score,
-	 input logic [15:0] inmatrix[0:3][0:3],
-	 output logic [15:0] new_score,
+	 input logic [1:0] dir, //Direccion a seleccionar 
+	 input logic [15:0] score,  
+	 input logic [15:0] inmatrix[0:3][0:3], 
+	 output logic [15:0] new_score, 
 	 output logic [15:0] outmatrix[0:3][0:3]
 );
 

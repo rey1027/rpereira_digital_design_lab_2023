@@ -1,0 +1,31 @@
+module pop_random(
+    input [15:0] matrix_in[0:3][0:3], 
+    output [15:0] matrix_out[0:3][0:3]);
+
+    reg [15:0] matrix[0:3][0:3];
+
+    initial begin
+        matrix = matrix_in;
+    end
+
+    initial begin 
+        int row = 0, col = 0;
+        repeat (250) begin
+            if (matrix[row][col] == 16'h0000) begin
+                matrix[row][col] = 16'h0000;
+                break;
+            end
+            col++;
+            if (col == 4) begin
+                col = 0;
+                row++;
+                if (row == 4) begin
+                    row = 0;
+                end
+            end
+        end
+    end
+
+    assign matrix_out = matrix;
+
+endmodule
