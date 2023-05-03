@@ -17,9 +17,9 @@ module pop_random(
 	 int row,col;
 	 always @(posedge clk) begin 
 	 
-		 row = my_output;
+		 row = my_output; //Son valores iguales 
 		
-		 col = my_output;
+		 col = my_output; //Son valores iguales 
 		
 		 matrix2=matrix_in;
 	

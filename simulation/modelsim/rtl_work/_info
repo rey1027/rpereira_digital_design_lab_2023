@@ -9,56 +9,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Fsm_2048/simulation/modelsim
-vaddAndmov
+vlfsr_0_3
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1682611806
+Z2 !s110 1683045147
 !i10b 1
-!s100 ?]@<V]cL_:oMiKW;6X_AN0
+!s100 NeCBz2NzH8B<NkQkTVeYF0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I5Cld1eIGH_Ad@N?0mCW?O0
+I[bSDZZ=;WRggI7fg]kK6X3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1682610693
-8D:/Fsm_2048/addAndmov.sv
-FD:/Fsm_2048/addAndmov.sv
+w1682528999
+8D:/Fsm_2048/lfsr_0_3.sv
+FD:/Fsm_2048/lfsr_0_3.sv
 !i122 0
-L0 1 140
+L0 3 19
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1682611805.000000
-!s107 D:/Fsm_2048/addAndmov.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Fsm_2048|D:/Fsm_2048/addAndmov.sv|
+Z6 !s108 1683045147.000000
+!s107 D:/Fsm_2048/lfsr_0_3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Fsm_2048|D:/Fsm_2048/lfsr_0_3.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+D:/Fsm_2048
-Z8 tCvgOpt 0
-nadd@andmov
-vmov_tb
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/Fsm_2048
+Z9 tCvgOpt 0
+vlfsr_0_3_test
 R1
 R2
 !i10b 1
-!s100 cNYgYCacgBTNOhH;;WY@O2
+!s100 kIgRcT[ADXnzeMYC>ZSY`1
 R3
-IHDo^BcIIbD3kIioLmAc0e2
+IU=fl4:IiIQm@QgeDo;kZ00
 R4
 S1
 R0
-w1682610353
-8D:/Fsm_2048/mov_tb.sv
-FD:/Fsm_2048/mov_tb.sv
+w1682529133
+8D:/Fsm_2048/lfsr_0_3_test.sv
+FD:/Fsm_2048/lfsr_0_3_test.sv
 !i122 1
-L0 1 114
+L0 1 30
 R5
 r1
 !s85 0
 31
-!s108 1682611806.000000
-!s107 D:/Fsm_2048/mov_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Fsm_2048|D:/Fsm_2048/mov_tb.sv|
-!i113 1
 R6
+!s107 D:/Fsm_2048/lfsr_0_3_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Fsm_2048|D:/Fsm_2048/lfsr_0_3_test.sv|
+!i113 1
 R7
 R8
+R9

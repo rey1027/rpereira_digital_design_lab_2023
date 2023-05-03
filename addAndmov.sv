@@ -1,5 +1,5 @@
 module addAndmov(
-	 input logic [1:0] dir, //Direccion a seleccionar 
+	 input logic [3:0] dir, //Direccion a seleccionar 
 	 input logic [15:0] score,  
 	 input logic [15:0] inmatrix[0:3][0:3], 
 	 output logic [15:0] new_score, 
@@ -15,7 +15,7 @@ integer n = 0;
 always @* begin
 	new_score = score;
 	case(dir)
-		2'b00: begin // left
+		3'b011: begin // left
 			for (int i = 0; i < 4; i++) begin
 				 value = 0;
 				 n = 0;
@@ -45,7 +45,7 @@ always @* begin
 			end
 		
 		end	// end case left
-		2'b01: begin // rigth
+		3'b100: begin // rigth
 				for (int i = 0; i < 4; i++) begin
 				 value = 0;
 				 n = 4;
@@ -75,7 +75,7 @@ always @* begin
 			end
 		
 		end // end case rigth
-		2'b10: begin //up
+		3'b001: begin //up
 			for (int i = 0; i < 4; i++) begin
 				 value = 0;
 				 n = 0;
@@ -105,7 +105,7 @@ always @* begin
 			end
 		
 		end	// end case up
-		2'b11: begin // down
+		3'b010: begin // down
 				for (int i = 0; i < 4; i++) begin
 				 value = 0;
 				 n = 4;

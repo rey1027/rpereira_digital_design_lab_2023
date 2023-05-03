@@ -45,11 +45,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+D:/Fsm_2048 {D:/Fsm_2048/addAndmov.sv}
+vlog -sv -work work +incdir+D:/Fsm_2048 {D:/Fsm_2048/lfsr_0_3.sv}
 
-vlog -sv -work work +incdir+D:/Fsm_2048 {D:/Fsm_2048/mov_tb.sv}
+vlog -sv -work work +incdir+D:/Fsm_2048 {D:/Fsm_2048/lfsr_0_3_test.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mov_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  lfsr_0_3_test
 
 add wave *
 view structure

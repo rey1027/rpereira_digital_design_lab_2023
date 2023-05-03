@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Apr 30 15:58:36 2023
+Analysis & Synthesis Status : Successful - Tue May  2 18:20:02 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Fsm_2048
-Top-level Entity Name : pop_random
+Top-level Entity Name : game2048
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 261
-Total pins : 514
+Total registers : 3
+Total pins : 12
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
