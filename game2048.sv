@@ -1,12 +1,10 @@
 module game2048(
-  input clk,
-  input reset,
-  input move_up,
-  input move_down,
-  input move_left,
-  input move_right,
-  output clk_out,
-  output reset_out,
+  input logic clk,
+  input logic reset,
+  input logic move_up,
+  input logic move_down,
+  input logic move_left,
+  input logic move_right,
   output logic [3:0] state_reg
 );
 
@@ -18,6 +16,7 @@ module game2048(
   parameter MOVE_DOWN = 2; //10
   parameter MOVE_LEFT = 3; //11
   parameter MOVE_RIGHT = 4; //100
+  
   
   // Define outputs
  // logic [15:0] board_reg [0:3][0:3];

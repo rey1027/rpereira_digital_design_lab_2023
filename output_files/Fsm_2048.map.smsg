@@ -1,4 +1,0 @@
-Info (10281): Verilog HDL Declaration information at game2048.sv(4): object "move_up" differs only in case from object "MOVE_UP" in the same scope File: D:/Fsm_2048/game2048.sv Line: 4
-Info (10281): Verilog HDL Declaration information at game2048.sv(5): object "move_down" differs only in case from object "MOVE_DOWN" in the same scope File: D:/Fsm_2048/game2048.sv Line: 5
-Info (10281): Verilog HDL Declaration information at game2048.sv(6): object "move_left" differs only in case from object "MOVE_LEFT" in the same scope File: D:/Fsm_2048/game2048.sv Line: 6
-Info (10281): Verilog HDL Declaration information at game2048.sv(7): object "move_right" differs only in case from object "MOVE_RIGHT" in the same scope File: D:/Fsm_2048/game2048.sv Line: 7

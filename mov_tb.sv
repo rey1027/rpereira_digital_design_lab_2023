@@ -1,6 +1,5 @@
 module mov_tb;
-
-logic [1:0] dir;
+logic [3:0] dir;
 logic [15:0] inmatrix[0:3][0:3];
 logic [15:0] outmatrix[0:3][0:3];
 reg [15:0] data_in;
@@ -13,7 +12,7 @@ logic [15:0] score = 0;
 logic [15:0] new_score;
 
 
-addAndmov mov(dir,score, inmatrix,new_score, outmatrix);
+addAndmov mov(dir,score,inmatrix,new_score,outmatrix);
 matrix_4_4 dut(data_in,row_sel,col_sel,matrix);
 win win1(con,matrix,winflag);
 
@@ -88,19 +87,19 @@ initial begin
     col_sel = 3;
     #10;
 	 
-	 dir = 2'b00;
+	 dir = 3'b011;
 	 inmatrix = matrix; #50;
 	 matrix = outmatrix; #50;
 	 score = new_score; # 50
-	 dir = 2'b11;
+	 dir = 3'b010;
 	 inmatrix = matrix; #50;
 	 matrix = outmatrix; #50;
 	 score = new_score; # 50
-	 dir = 2'b01;	 	 
+	 dir = 3'b100;	 	 
 	 inmatrix = matrix; #50;
 	 matrix = outmatrix; #50;
 	 score = new_score; # 50
-	 dir = 2'b10;	 	 
+	 dir = 3'b001;	 	 
 	 inmatrix = matrix; #50;
 	 matrix = outmatrix; #50;
 	 score = new_score; # 50

@@ -1,2 +1,32 @@
-module main();
+module main(
+				input logic ar,
+				input logic ab,
+				input logic iz,
+				input logic de,
+				input clk,
+				input rst,
+				output logic win,
+				output logic loss,
+				output logic [6:0] s0,s1,s2,s3,
+				output logic [15:0] outmatrix[3:0][3:0],
+				output logic vgaclk,
+				output logic hsync, vsync,
+				output logic sync_b, blank_b,
+				output logic [7:0] r,g,b
+);
+
+logic [3:0]dir;
+logic [15:0] inmatrix[3:0][3:0];
+logic [15:0] new_score;
+
+
+game2048 mde(clk,rst,ar,ab,iz,de,dir);
+
+controller_game game(clk,dir,new_score,inmatrix,new_score,win,loss,inmatrix);
+
+hextosseg conscore(new_score,s0,s1,s2,s3);
+
+assign outmatrix = inmatrix;
+
+
 endmodule

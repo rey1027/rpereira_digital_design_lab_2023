@@ -1,0 +1,14 @@
+module vga(clk,clk_25,rst,rstv,red,green,blue,vga_hsync,vga_vsync);
+	input clk,rstv,rst;
+	output reg red,blue,green; // COLOR
+	output reg vga_hsync,vga_vsync; //Control de signal
+	reg [9:0]hs=0;
+	reg [9:0]vs=0;
+	output reg clk_25;
+	
+	always@(posedge clk) // FPGA CLK = 50MHz
+	begin
+	if(rst)
+		clk_25<=1'b0;
+	else
+		clk_25<=~clk_25; // CLK de 25 MHz para vga

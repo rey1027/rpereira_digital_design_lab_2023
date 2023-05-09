@@ -1,4 +1,5 @@
 module addAndmov(
+	 input logic clk,
 	 input logic [3:0] dir, //Direccion a seleccionar 
 	 input logic [15:0] score,  
 	 input logic [15:0] inmatrix[0:3][0:3], 
@@ -11,8 +12,10 @@ module addAndmov(
 integer value = 0;
 integer n = 0;
 
+
+
  
-always @* begin
+always @(posedge clk) begin
 	new_score = score;
 	case(dir)
 		3'b011: begin // left
@@ -134,6 +137,16 @@ always @* begin
 				end
 			end
 		end // end case down
+		3'b000: begin // reset
+				for (int i = 0;i < 4; i++) begin
+					for (int j = 0;j < 4; j++) begin
+						if (j == 2 && i == 1) outmatrix[i][j] = 2;
+						else outmatrix[i][j] = 0;
+						
+					end
+				end
+				new_score = 0;
+		end // end reset
    endcase
 
 end
