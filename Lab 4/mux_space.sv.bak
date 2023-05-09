@@ -1,0 +1,11 @@
+module mux_space( input logic [9:0]minx,miny,maxx,maxy,hs,vs,
+						input logic [3:0]state,
+						output logic [7:0]r,g,b );
+						
+		logic inpos;
+		
+		assign inpos = ((minx <= hs)&(maxx >= hs)&(miny <= vs)&(maxy >= vs));
+		
+		always @(state)
+						
+						

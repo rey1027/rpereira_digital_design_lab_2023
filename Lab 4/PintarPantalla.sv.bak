@@ -1,0 +1,4 @@
+module PintarPantalla(
+	input logic reset,clk_25,
+	input logic [9:0]hs,vs,
+	output logic [7:0] r,g,b);

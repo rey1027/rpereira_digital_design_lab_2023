@@ -1,0 +1,505 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/simulation/modelsim
+vaddAndmov
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683638613
+!i10b 1
+!s100 4bMzI`8jc3d<AQdm:5MfK3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8oXUWF9H>S<gF0[J`5hzf0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1683619698
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/addAndmov.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/addAndmov.sv
+!i122 9
+L0 1 153
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1683638613.000000
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/addAndmov.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/addAndmov.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe
+Z9 tCvgOpt 0
+nadd@andmov
+vbintosseg
+R1
+R2
+!i10b 1
+!s100 MhnWK;7C[g7<m[9[[iFg80
+R3
+Ii?M@KX6YohX^fD=hcaJ923
+R4
+S1
+R0
+w1678153818
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/bintosseg.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/bintosseg.sv
+!i122 8
+L0 1 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/bintosseg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/bintosseg.sv|
+!i113 1
+R7
+R8
+R9
+vcheck_loss
+R1
+R2
+!i10b 1
+!s100 bG9RicVOo^2;eT;V?`ZJK0
+R3
+I227Y3Fkg=iHL@d0ODKhNk3
+R4
+S1
+R0
+w1683627837
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/check_loss.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/check_loss.sv
+!i122 7
+L0 1 40
+R5
+r1
+!s85 0
+31
+Z10 !s108 1683638612.000000
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/check_loss.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/check_loss.sv|
+!i113 1
+R7
+R8
+R9
+vCheckPos
+R1
+R2
+!i10b 1
+!s100 7P8ObYnUMJYSZMI7gmB1o1
+R3
+I_3`BaO8SPMan>N1[WW=0X2
+R4
+S1
+R0
+w1683630862
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/CheckPos.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/CheckPos.sv
+!i122 13
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/CheckPos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/CheckPos.sv|
+!i113 1
+R7
+R8
+R9
+n@check@pos
+vclkdiv
+R1
+R2
+!i10b 1
+!s100 XeWzk5II4AAFLPm5DJ=4E0
+R3
+IVOf8;f8RlcD3hLF>9X:=W3
+R4
+S1
+R0
+w1683597746
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/clkdiv.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/clkdiv.sv
+!i122 14
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/clkdiv.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/clkdiv.sv|
+!i113 1
+R7
+R8
+R9
+vControladorVGA
+R1
+R2
+!i10b 1
+!s100 z?lDKN;ADO8:KR_>a`Bc`0
+R3
+I0j7INJJjRh3LC39g;5=j63
+R4
+S1
+R0
+w1683632029
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/ControladorVGA.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/ControladorVGA.sv
+!i122 12
+L0 1 44
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/ControladorVGA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/ControladorVGA.sv|
+!i113 1
+R7
+R8
+R9
+n@controlador@v@g@a
+vcontroller_game
+R1
+Z11 !s110 1683638612
+!i10b 1
+!s100 h=@D=[co7Qek:]P4;0DNJ3
+R3
+Ik`>g^TTZAVn^@cNOQ=P>O1
+R4
+S1
+R0
+w1683623921
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/controller_game.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/controller_game.sv
+!i122 6
+Z12 L0 1 25
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/controller_game.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/controller_game.sv|
+!i113 1
+R7
+R8
+R9
+vgame2048
+R1
+R11
+!i10b 1
+!s100 oEbA4A78MlL`OG[zbN9BZ2
+R3
+I8hRKTYGY_]eTlE=9NEGi10
+R4
+S1
+R0
+w1683593620
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/game2048.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/game2048.sv
+!i122 5
+L0 1 81
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/game2048.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/game2048.sv|
+!i113 1
+R7
+R8
+R9
+vhextosseg
+R1
+R11
+!i10b 1
+!s100 ab88h?7FBLWMgmmleOT@^1
+R3
+I;2N`TAbEa8;`[lz[fz;2o3
+R4
+S1
+R0
+w1683632990
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/hextosseg.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/hextosseg.sv
+!i122 4
+L0 1 15
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/hextosseg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/hextosseg.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+R11
+!i10b 1
+!s100 ^0BIFzXPIZ?:f6QI9[iRN1
+R3
+IRz??UmAXGC=kGING:PDdZ1
+R4
+S1
+R0
+w1683637099
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main.sv
+!i122 3
+L0 1 34
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main.sv|
+!i113 1
+R7
+R8
+R9
+vmain_tb
+R1
+R2
+!i10b 1
+!s100 bWg9NmSck81nQgUJJ<?Sb2
+R3
+IIRe9hz10zjLmLQ6`PJf6`1
+R4
+S1
+R0
+w1683637192
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main_tb.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main_tb.sv
+!i122 18
+L0 1 559
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/main_tb.sv|
+!i113 1
+R7
+R8
+R9
+vmux_dibujar
+R1
+R2
+!i10b 1
+!s100 =ZHJj355>3LgGoZFO:XVX3
+R3
+IBY:PELgV4Zkf:zd`PLBoQ3
+R4
+S1
+R0
+w1683635905
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_dibujar.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_dibujar.sv
+!i122 15
+L0 1 45
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_dibujar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_dibujar.sv|
+!i113 1
+R7
+R8
+R9
+vmux_space
+R1
+R2
+!i10b 1
+!s100 bW[7H3T:31LOKEK8<RAD<1
+R3
+ILS^VW`Bk;:WDVh9_h7OmT3
+R4
+S1
+R0
+w1683636034
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_space.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_space.sv
+!i122 16
+L0 1 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_space.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/mux_space.sv|
+!i113 1
+R7
+R8
+R9
+vPantalla
+R1
+R2
+!i10b 1
+!s100 _V==1W9n`5=3_NA5eo5023
+R3
+IaTQePRki^:]e0RMeWV`QA2
+R4
+S1
+R0
+w1683634373
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/Pantalla.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/Pantalla.sv
+!i122 11
+L0 1 56
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/Pantalla.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/Pantalla.sv|
+!i113 1
+R7
+R8
+R9
+n@pantalla
+vpruebaclock
+R11
+!i10b 1
+!s100 BfN8[GJSFfcZ^9gn^lV;S3
+R3
+IcNBJLVJAmVD02a6<egRdb1
+R4
+R0
+w1683597924
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/pruebaclock_sim/pruebaclock.vo
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/pruebaclock_sim/pruebaclock.vo
+!i122 0
+L0 32 264
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/pruebaclock_sim/pruebaclock.vo|
+!s90 -reportprogress|300|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/pruebaclock_sim/pruebaclock.vo|
+!i113 1
+R9
+vrandom_number
+R1
+R11
+!i10b 1
+!s100 3kiX]6VjCgIFJBGT<7d8]0
+R3
+Iclg4F78NL4im[MhAaDd^V0
+R4
+S1
+R0
+w1683604609
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/random_number.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/random_number.sv
+!i122 2
+L0 1 33
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/random_number.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/random_number.sv|
+!i113 1
+R7
+R8
+R9
+vtablero
+R1
+R2
+!i10b 1
+!s100 MP36K7JLZ7MQRbDZP2l:61
+R3
+IGLJ=GNe[jkznn20YELze;0
+R4
+S1
+R0
+w1683633821
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/tablero.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/tablero.sv
+!i122 17
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/tablero.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/tablero.sv|
+!i113 1
+R7
+R8
+R9
+vvga
+R1
+R2
+!i10b 1
+!s100 WaNK6g9IADJH5I8iPJab;2
+R3
+IP8T>Lm`9UBbdlXg]JkgBW3
+R4
+S1
+R0
+w1683637076
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/vga.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/vga.sv
+!i122 10
+L0 1 39
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/vga.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/vga.sv|
+!i113 1
+R7
+R8
+R9
+vwin
+R1
+R11
+!i10b 1
+!s100 2[Qo9f0lFEWL__YLCV=410
+R3
+IlWA7PA[GzcM9YFPJGY5L`2
+R4
+S1
+R0
+w1683238215
+8C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/win.sv
+FC:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/win.sv
+!i122 1
+L0 1 18
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/win.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe|C:/Users/Rachel/Desktop/prueba_vgamaybe/prueba_vgamaybe/win.sv|
+!i113 1
+R7
+R8
+R9

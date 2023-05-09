@@ -1,0 +1,2 @@
+module CheckPos( input logic [9:0] hs,vs,
+					  output logic pos[15:0]);
