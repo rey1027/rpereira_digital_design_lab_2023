@@ -1,5 +1,5 @@
 module arm(input  logic        clk, reset,
-           output logic [31:0] PC,
+           output logic [8:0] PC,
            input  logic [31:0] Instr,
            output logic        MemWrite,
            output logic [31:0] ALUResult, WriteData,
@@ -7,16 +7,20 @@ module arm(input  logic        clk, reset,
 
   logic [3:0] ALUFlags;
   logic       RegWrite, ALUSrc,
-              MemtoReg, PCSrc;
-	       
+              MemtoReg, PCSrc;    
   logic [1:0] RegSrc, ImmSrc, ALUControl;
-
-  controller c(clk, reset, Instr[31:12], ALUFlags, RegSrc, RegWriteRegWrite,
+  logic [31:0] q;
+  rom_2 rom(PC,clk,q);
+  controller c(clk, reset, q[31:12], ALUFlags, RegSrc, RegWriteRegWrite,
 					 ImmSrc, ALUSrc, ALUControl, MemWrite, MemToReg, PCSrc);
   datapath dp(clk, reset, 
               RegSrc, RegWrite, ImmSrc,
               ALUSrc, ALUControl,
               MemtoReg, PCSrc,
-              ALUFlags, PC, Instr,
+              ALUFlags, PC, q,
               ALUResult, WriteData, ReadData);
+				    
+	
+				  
+	
 endmodule

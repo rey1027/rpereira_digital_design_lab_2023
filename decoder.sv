@@ -1,11 +1,13 @@
+
+//Cambiar logica para soportar CMP
 module decoder(input logic  [1:0] Op,
 					input logic  [5:0] Funct,
 					input logic  [3:0] Rd,
 					output logic [1:0] FlagW,
 					output logic 		 PCS, RegW, MemW,
 					output logic 		 MemToReg, ALUSrc,
-					output logic [1:0] ImmSrc, RegSrc, ALUControl
-					);
+					output logic [1:0] ImmSrc, RegSrc, ALUControl,
+					output logic NoWrite);
 					
 		logic [9:0] controls;
 		logic 		Branch, ALUOp;
@@ -35,6 +37,7 @@ module decoder(input logic  [1:0] Op,
 					4'b0010: ALUControl = 2'b01; // SUB
 					4'b0000: ALUControl = 2'b10; // AND
 					4'b1100: ALUControl = 2'b11; // OR
+					4'b1010: ALUControl = 2'b01;  //CMP
 					default: ALUControl = 2'bx;  // unimplemented
 				endcase
 				

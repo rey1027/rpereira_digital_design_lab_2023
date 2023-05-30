@@ -3,7 +3,8 @@ module condlogic(input  logic       clk, reset,
                  input  logic [3:0] ALUFlags,
                  input  logic [1:0] FlagW,
                  input  logic       PCS, RegW, MemW,
-                 output logic       PCSrc, RegWrite, MemWrite);
+                 output logic       PCSrc, RegWrite, MemWrite,
+					  input logic NoWrite);
                  
   logic [1:0] FlagWrite;
   logic [3:0] Flags;
@@ -17,7 +18,7 @@ module condlogic(input  logic       clk, reset,
   // write controls are conditional
   condcheck cc(Cond, Flags, CondEx);
   assign FlagWrite = FlagW & {2{CondEx}};
-  assign RegWrite  = RegW  & CondEx;
+  assign RegWrite  = RegW  & CondEx & ~NoWrite; //Se cambio la logica para soporta el CMP
   assign MemWrite  = MemW  & CondEx;
   assign PCSrc     = PCS   & CondEx;
 endmodule    

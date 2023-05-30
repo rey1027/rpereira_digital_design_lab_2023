@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Mon May 29 18:46:16 2023
+Tue May 30 11:18:09 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -13,43 +13,50 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1
- 12. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0
- 13. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
- 14. Parameter Settings for User Entity Instance: datapath:dp|flopr:pcreg
- 15. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1
- 16. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2
- 17. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux
- 18. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux
- 19. Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux
- 20. Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux
- 21. Parameter Settings for User Entity Instance: datapath:dp|alu:alu
- 22. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|sumador_n:sum1
- 23. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|restador_n:res1
- 24. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_arithmetic:lsl1
- 25. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_arithmetic:lrl1
- 26. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|and_gate_n:and1
- 27. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|or_gate_n:or1
- 28. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|xor_gate_n:xor1
- 29. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_logic:lsl2
- 30. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_logic:lrl2
- 31. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|n_not_gate:not1
- 32. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux_:mux1
- 33. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroflag:zf
- 34. Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"
- 35. Port Connectivity Checks: "datapath:dp|alu:alu|sumador_n:sum1"
- 36. Port Connectivity Checks: "datapath:dp|alu:alu"
- 37. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
- 38. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
- 39. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
- 40. Port Connectivity Checks: "controller:c"
- 41. Post-Synthesis Netlist Statistics for Top Partition
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
- 44. Analysis & Synthesis Suppressed Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated
+ 15. Parameter Settings for User Entity Instance: rom_2:rom|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1
+ 17. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0
+ 18. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
+ 19. Parameter Settings for User Entity Instance: datapath:dp|flopr:pcreg
+ 20. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1
+ 21. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2
+ 22. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux
+ 23. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux
+ 24. Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux
+ 25. Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux
+ 26. Parameter Settings for User Entity Instance: datapath:dp|alu:alu
+ 27. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|sumador_n:sum1
+ 28. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|restador_n:res1
+ 29. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_arithmetic:lsl1
+ 30. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_arithmetic:lrl1
+ 31. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|and_gate_n:and1
+ 32. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|or_gate_n:or1
+ 33. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|xor_gate_n:xor1
+ 34. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_logic:lsl2
+ 35. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_logic:lrl2
+ 36. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|n_not_gate:not1
+ 37. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux_:mux1
+ 38. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroflag:zf
+ 39. altsyncram Parameter Settings by Entity Instance
+ 40. Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"
+ 41. Port Connectivity Checks: "datapath:dp|alu:alu|sumador_n:sum1"
+ 42. Port Connectivity Checks: "datapath:dp|alu:alu"
+ 43. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
+ 44. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
+ 45. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
+ 46. Port Connectivity Checks: "datapath:dp|flopr:pcreg"
+ 47. Port Connectivity Checks: "controller:c"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -76,16 +83,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 29 18:46:16 2023          ;
+; Analysis & Synthesis Status     ; Successful - Tue May 30 11:18:09 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; processor                                      ;
 ; Top-level Entity Name           ; arm                                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 35                                             ;
-; Total pins                      ; 163                                            ;
+; Total registers                 ; 11                                             ;
+; Total pins                      ; 140                                            ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
+; Total block memory bits         ; 16,384                                         ;
 ; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
@@ -196,49 +203,59 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                              ;
-+----------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
-; Laboratorio 3/ALU/alu/zeroflag.sv                                    ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv                                    ;         ;
-; Laboratorio 3/ALU/alu/neflag.sv                                      ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/alu/neflag.sv                                      ;         ;
-; Laboratorio 3/ALU/alu/mux_.sv                                        ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/alu/mux_.sv                                        ;         ;
-; Laboratorio 3/ALU/alu/caflag.sv                                      ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/alu/caflag.sv                                      ;         ;
-; Laboratorio 3/ALU/alu/alu.sv                                         ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/alu/alu.sv                                         ;         ;
-; Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv      ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv      ;         ;
-; Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv   ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv   ;         ;
-; Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv    ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv    ;         ;
-; Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv                    ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv                      ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv                     ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/or_gate.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv                       ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv                    ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv                     ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv                ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv                     ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv                ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv                    ;         ;
-; Laboratorio 3/ALU/Operandos_logicos/and_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv                      ;         ;
-; register_file.sv                                                     ; yes             ; User SystemVerilog HDL File  ; D:/processor/register_file.sv                                                     ;         ;
-; adder.sv                                                             ; yes             ; User SystemVerilog HDL File  ; D:/processor/adder.sv                                                             ;         ;
-; extend.sv                                                            ; yes             ; User SystemVerilog HDL File  ; D:/processor/extend.sv                                                            ;         ;
-; flopr.sv                                                             ; yes             ; User SystemVerilog HDL File  ; D:/processor/flopr.sv                                                             ;         ;
-; flopenr.sv                                                           ; yes             ; User SystemVerilog HDL File  ; D:/processor/flopenr.sv                                                           ;         ;
-; mux2.sv                                                              ; yes             ; User SystemVerilog HDL File  ; D:/processor/mux2.sv                                                              ;         ;
-; decoder.sv                                                           ; yes             ; User SystemVerilog HDL File  ; D:/processor/decoder.sv                                                           ;         ;
-; condlogic.sv                                                         ; yes             ; User SystemVerilog HDL File  ; D:/processor/condlogic.sv                                                         ;         ;
-; datapath.sv                                                          ; yes             ; User SystemVerilog HDL File  ; D:/processor/datapath.sv                                                          ;         ;
-; arm.sv                                                               ; yes             ; User SystemVerilog HDL File  ; D:/processor/arm.sv                                                               ;         ;
-; controller.sv                                                        ; yes             ; User SystemVerilog HDL File  ; D:/processor/controller.sv                                                        ;         ;
-+----------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++----------------------------------------------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------------------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
+; Laboratorio 3/ALU/alu/zeroflag.sv                                    ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv                                    ;         ;
+; Laboratorio 3/ALU/alu/neflag.sv                                      ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/alu/neflag.sv                                      ;         ;
+; Laboratorio 3/ALU/alu/mux_.sv                                        ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/alu/mux_.sv                                        ;         ;
+; Laboratorio 3/ALU/alu/caflag.sv                                      ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/alu/caflag.sv                                      ;         ;
+; Laboratorio 3/ALU/alu/alu.sv                                         ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/alu/alu.sv                                         ;         ;
+; Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv      ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv      ;         ;
+; Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv   ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv   ;         ;
+; Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv    ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv    ;         ;
+; Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv                    ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv                    ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv                      ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv                      ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv                     ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/or_gate.sv                       ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv                       ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv                    ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv                    ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv                     ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv                ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv                     ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv                ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv                ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv                    ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv                    ;         ;
+; Laboratorio 3/ALU/Operandos_logicos/and_gate.sv                      ; yes             ; User SystemVerilog HDL File      ; D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv                      ;         ;
+; register_file.sv                                                     ; yes             ; User SystemVerilog HDL File      ; D:/processor/register_file.sv                                                     ;         ;
+; adder.sv                                                             ; yes             ; User SystemVerilog HDL File      ; D:/processor/adder.sv                                                             ;         ;
+; extend.sv                                                            ; yes             ; User SystemVerilog HDL File      ; D:/processor/extend.sv                                                            ;         ;
+; flopr.sv                                                             ; yes             ; User SystemVerilog HDL File      ; D:/processor/flopr.sv                                                             ;         ;
+; flopenr.sv                                                           ; yes             ; User SystemVerilog HDL File      ; D:/processor/flopenr.sv                                                           ;         ;
+; mux2.sv                                                              ; yes             ; User SystemVerilog HDL File      ; D:/processor/mux2.sv                                                              ;         ;
+; decoder.sv                                                           ; yes             ; User SystemVerilog HDL File      ; D:/processor/decoder.sv                                                           ;         ;
+; condlogic.sv                                                         ; yes             ; User SystemVerilog HDL File      ; D:/processor/condlogic.sv                                                         ;         ;
+; datapath.sv                                                          ; yes             ; User SystemVerilog HDL File      ; D:/processor/datapath.sv                                                          ;         ;
+; arm.sv                                                               ; yes             ; User SystemVerilog HDL File      ; D:/processor/arm.sv                                                               ;         ;
+; controller.sv                                                        ; yes             ; User SystemVerilog HDL File      ; D:/processor/controller.sv                                                        ;         ;
+; rom_2.mif                                                            ; yes             ; User Memory Initialization File  ; D:/processor/rom_2.mif                                                            ;         ;
+; rom_2.v                                                              ; yes             ; User Wizard-Generated File       ; D:/processor/rom_2.v                                                              ;         ;
+; altsyncram.tdf                                                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
+; stratix_ram_block.inc                                                ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
+; lpm_mux.inc                                                          ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
+; lpm_decode.inc                                                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; aglobal221.inc                                                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc          ;         ;
+; a_rdenreg.inc                                                        ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
+; altrom.inc                                                           ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc              ;         ;
+; altram.inc                                                           ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc              ;         ;
+; altdpram.inc                                                         ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; db/altsyncram_oaf1.tdf                                               ; yes             ; Auto-Generated Megafunction      ; D:/processor/db/altsyncram_oaf1.tdf                                               ;         ;
++----------------------------------------------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------+
@@ -246,118 +263,131 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------------------+
 ; Resource                                    ; Usage                           ;
 +---------------------------------------------+---------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 642                             ;
+; Estimate of Logic utilization (ALMs needed) ; 383                             ;
 ;                                             ;                                 ;
-; Combinational ALUT usage for logic          ; 810                             ;
-;     -- 7 input functions                    ; 57                              ;
-;     -- 6 input functions                    ; 416                             ;
-;     -- 5 input functions                    ; 66                              ;
-;     -- 4 input functions                    ; 64                              ;
-;     -- <=3 input functions                  ; 207                             ;
+; Combinational ALUT usage for logic          ; 501                             ;
+;     -- 7 input functions                    ; 9                               ;
+;     -- 6 input functions                    ; 255                             ;
+;     -- 5 input functions                    ; 68                              ;
+;     -- 4 input functions                    ; 69                              ;
+;     -- <=3 input functions                  ; 100                             ;
 ;                                             ;                                 ;
-; Dedicated logic registers                   ; 35                              ;
+; Dedicated logic registers                   ; 11                              ;
 ;                                             ;                                 ;
-; I/O pins                                    ; 163                             ;
+; I/O pins                                    ; 140                             ;
+; Total MLAB memory bits                      ; 0                               ;
+; Total block memory bits                     ; 16384                           ;
 ;                                             ;                                 ;
 ; Total DSP Blocks                            ; 0                               ;
 ;                                             ;                                 ;
-; Maximum fan-out node                        ; controller:c|decoder:dec|Mux0~0 ;
-; Maximum fan-out                             ; 96                              ;
-; Total fan-out                               ; 4387                            ;
-; Average fan-out                             ; 3.75                            ;
+; Maximum fan-out node                        ; datapath:dp|mux2:srcbmux|y[3]~2 ;
+; Maximum fan-out                             ; 95                              ;
+; Total fan-out                               ; 3021                            ;
+; Average fan-out                             ; 3.67                            ;
 +---------------------------------------------+---------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name    ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
-; |arm                                         ; 810 (0)             ; 35 (0)                    ; 0                 ; 0          ; 163  ; 0            ; |arm                                                                    ; arm            ; work         ;
-;    |controller:c|                            ; 16 (0)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c                                                       ; controller     ; work         ;
-;       |condlogic:cl|                         ; 11 (5)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl                                          ; condlogic      ; work         ;
-;          |condcheck:cc|                      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|condcheck:cc                             ; condcheck      ; work         ;
-;          |flopenr:flagreg0|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg0                         ; flopenr        ; work         ;
-;          |flopenr:flagreg1|                  ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg1                         ; flopenr        ; work         ;
-;       |decoder:dec|                          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|decoder:dec                                           ; decoder        ; work         ;
-;    |datapath:dp|                             ; 794 (0)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp                                                        ; datapath       ; work         ;
-;       |adder:pcadd1|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd1                                           ; adder          ; work         ;
-;       |adder:pcadd2|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd2                                           ; adder          ; work         ;
-;       |alu:alu|                              ; 628 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu                                                ; alu            ; work         ;
-;          |lrl_arithmetic:lrl1|               ; 165 (165)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lrl_arithmetic:lrl1                            ; lrl_arithmetic ; work         ;
-;          |lsl_arithmetic:lsl1|               ; 196 (196)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1                            ; lsl_arithmetic ; work         ;
-;          |mux_:mux1|                         ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|mux_:mux1                                      ; mux_           ; work         ;
-;          |neflag:nf|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|neflag:nf                                      ; neflag         ; work         ;
-;          |restador_n:res1|                   ; 95 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1                                ; restador_n     ; work         ;
-;             |restador_1bit:restador[10].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[10].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[11].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[11].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[12].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[12].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[13].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[13].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[14].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[14].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[15].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[15].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[16].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[16].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[17].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[17].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[18].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[18].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[19].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[19].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[1].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[1].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[20].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[20].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[21].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[21].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[22].dut| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[22].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[23].dut| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[23].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[24].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[24].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[25].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[25].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[26].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[26].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[27].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[27].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[28].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[28].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[29].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[29].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[2].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[2].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[30].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[30].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[31].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[31].dut ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[3].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[3].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[4].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[4].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[5].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[5].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[6].dut|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[6].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[7].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[7].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[8].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[8].dut  ; restador_1bit  ; work         ;
-;             |restador_1bit:restador[9].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[9].dut  ; restador_1bit  ; work         ;
-;          |sumador_n:sum1|                    ; 125 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1                                 ; sumador_n      ; work         ;
-;             |sumador_1bit:sumador[10].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[10].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[11].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[11].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[12].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[12].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[13].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[13].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[14].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[14].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[15].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[15].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[16].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[16].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[17].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[17].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[18].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[18].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[19].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[19].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[1].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[1].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[20].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[20].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[21].dut|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[21].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[22].dut|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[22].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[23].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[23].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[24].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[24].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[25].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[25].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[26].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[26].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[27].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[27].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[28].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[28].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[29].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[29].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[2].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[2].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[30].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[30].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[31].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[31].dut    ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[3].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[3].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[4].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[4].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[5].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[5].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[6].dut|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[6].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[7].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[7].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[8].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[8].dut     ; sumador_1bit   ; work         ;
-;             |sumador_1bit:sumador[9].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[9].dut     ; sumador_1bit   ; work         ;
-;          |zeroflag:zf|                       ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|zeroflag:zf                                    ; zeroflag       ; work         ;
-;       |flopr:pcreg|                          ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|flopr:pcreg                                            ; flopr          ; work         ;
-;       |mux2:srcbmux|                         ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|mux2:srcbmux                                           ; mux2           ; work         ;
-;       |register_file:rf|                     ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|register_file:rf                                       ; register_file  ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
+; |arm                                         ; 501 (0)             ; 11 (0)                    ; 16384             ; 0          ; 140  ; 0            ; |arm                                                                          ; arm             ; work         ;
+;    |controller:c|                            ; 9 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c                                                             ; controller      ; work         ;
+;       |condlogic:cl|                         ; 5 (4)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl                                                ; condlogic       ; work         ;
+;          |condcheck:cc|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|condcheck:cc                                   ; condcheck       ; work         ;
+;          |flopenr:flagreg0|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg0                               ; flopenr         ; work         ;
+;       |decoder:dec|                          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|decoder:dec                                                 ; decoder         ; work         ;
+;    |datapath:dp|                             ; 492 (0)             ; 9 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp                                                              ; datapath        ; work         ;
+;       |adder:pcadd1|                         ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd1                                                 ; adder           ; work         ;
+;       |adder:pcadd2|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd2                                                 ; adder           ; work         ;
+;       |alu:alu|                              ; 416 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu                                                      ; alu             ; work         ;
+;          |lrl_arithmetic:lrl1|               ; 152 (152)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lrl_arithmetic:lrl1                                  ; lrl_arithmetic  ; work         ;
+;          |lsl_arithmetic:lsl1|               ; 107 (107)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1                                  ; lsl_arithmetic  ; work         ;
+;          |mux_:mux1|                         ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|mux_:mux1                                            ; mux_            ; work         ;
+;          |neflag:nf|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|neflag:nf                                            ; neflag          ; work         ;
+;          |restador_n:res1|                   ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1                                      ; restador_n      ; work         ;
+;             |restador_1bit:restador[10].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[10].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[11].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[11].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[12].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[12].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[13].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[13].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[14].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[14].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[15].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[15].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[16].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[16].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[17].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[17].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[18].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[18].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[19].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[19].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[1].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[1].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[20].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[20].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[21].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[21].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[22].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[22].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[23].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[23].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[24].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[24].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[25].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[25].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[26].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[26].dut       ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[2].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[2].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[3].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[3].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[4].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[4].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[5].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[5].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[6].dut|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[6].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[7].dut|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[7].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[8].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[8].dut        ; restador_1bit   ; work         ;
+;             |restador_1bit:restador[9].dut|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[9].dut        ; restador_1bit   ; work         ;
+;          |sumador_n:sum1|                    ; 59 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1                                       ; sumador_n       ; work         ;
+;             |sumador_1bit:sumador[10].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[10].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[11].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[11].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[12].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[12].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[13].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[13].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[14].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[14].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[15].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[15].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[16].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[16].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[17].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[17].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[18].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[18].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[19].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[19].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[1].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[1].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[20].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[20].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[21].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[21].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[22].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[22].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[23].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[23].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[24].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[24].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[25].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[25].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[26].dut|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[26].dut          ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[2].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[2].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[3].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[3].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[4].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[4].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[5].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[5].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[6].dut|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[6].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[7].dut|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[7].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[8].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[8].dut           ; sumador_1bit    ; work         ;
+;             |sumador_1bit:sumador[9].dut|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[9].dut           ; sumador_1bit    ; work         ;
+;          |zeroflag:zf|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|zeroflag:zf                                          ; zeroflag        ; work         ;
+;       |extend:ext|                           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|extend:ext                                                   ; extend          ; work         ;
+;       |flopr:pcreg|                          ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|flopr:pcreg                                                  ; flopr           ; work         ;
+;       |mux2:srcbmux|                         ; 46 (46)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|mux2:srcbmux                                                 ; mux2            ; work         ;
+;       |register_file:rf|                     ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|register_file:rf                                             ; register_file   ; work         ;
+;    |rom_2:rom|                               ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |arm|rom_2:rom                                                                ; rom_2           ; work         ;
+;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |arm|rom_2:rom|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;          |altsyncram_oaf1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |arm|rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated ; altsyncram_oaf1 ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                  ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------+
+; Name                                                                                ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF       ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------+
+; rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 32           ; --           ; --           ; 16384 ; rom_2.mif ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                             ;
++--------+--------------+---------+--------------+--------------+-----------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-----------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |arm|rom_2:rom  ; rom_2.v         ;
++--------+--------------+---------+--------------+--------------+-----------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -846,8 +876,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; datapath:dp|register_file:rf|rf~386             ; Stuck at GND due to stuck port data_in ;
 ; datapath:dp|register_file:rf|rf~418             ; Stuck at GND due to stuck port data_in ;
 ; datapath:dp|register_file:rf|rf~450             ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 481         ;                                        ;
+; controller:c|condlogic:cl|flopenr:flagreg1|q[1] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 482         ;                                        ;
 +-------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                      ;
++------------------------------------+---------------------------+-------------------------------------------------+
+; Register name                      ; Reason for Removal        ; Registers Removed due to This Register          ;
++------------------------------------+---------------------------+-------------------------------------------------+
+; datapath:dp|register_file:rf|rf~30 ; Stuck at GND              ; controller:c|condlogic:cl|flopenr:flagreg1|q[1] ;
+;                                    ; due to stuck port data_in ;                                                 ;
++------------------------------------+---------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -855,30 +896,101 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
+; Total registers                              ; 11    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 30    ;
-; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Synchronous Load   ; 7     ;
+; Number of registers using Asynchronous Clear ; 11    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[30]                ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux31 ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux0  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux2  ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[24]                ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[0]                 ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[2]                 ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[11]                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[25]               ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lrl_arithmetic:lrl1|Mux0 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux0 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lrl_arithmetic:lrl1|Mux3 ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[23]               ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[0]                ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[3]                ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[11]               ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[9]                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Source assignments for rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------+
+; Assignment                      ; Value              ; From ; To                                ;
++---------------------------------+--------------------+------+-----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                 ;
++---------------------------------+--------------------+------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom_2:rom|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------+
+; Parameter Name                     ; Value                ; Type                       ;
++------------------------------------+----------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                    ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                    ;
+; WIDTH_A                            ; 32                   ; Signed Integer             ;
+; WIDTHAD_A                          ; 9                    ; Signed Integer             ;
+; NUMWORDS_A                         ; 512                  ; Signed Integer             ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WIDTH_B                            ; 1                    ; Untyped                    ;
+; WIDTHAD_B                          ; 1                    ; Untyped                    ;
+; NUMWORDS_B                         ; 1                    ; Untyped                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; rom_2.mif            ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_oaf1      ; Untyped                    ;
++------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------+
@@ -1111,6 +1223,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                      ;
++-------------------------------------------+-------------------------------------------+
+; Name                                      ; Value                                     ;
++-------------------------------------------+-------------------------------------------+
+; Number of entity instances                ; 1                                         ;
+; Entity Instance                           ; rom_2:rom|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                       ;
+;     -- WIDTH_A                            ; 32                                        ;
+;     -- NUMWORDS_A                         ; 512                                       ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                    ;
+;     -- WIDTH_B                            ; 1                                         ;
+;     -- NUMWORDS_B                         ; 1                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ;
++-------------------------------------------+-------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"                                                                                                                                                  ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1160,15 +1292,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|adder:pcadd1" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND           ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND           ;
-; b[2]     ; Input ; Info     ; Stuck at VCC           ;
-+----------+-------+----------+------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|adder:pcadd1"                                                                                                                      ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                     ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; a        ; Input ; Warning  ; Input port expression (9 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "a[31..9]" will be connected to GND. ;
+; b[31..3] ; Input ; Info     ; Stuck at GND                                                                                                                                ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|flopr:pcreg"                                                                                               ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; q    ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (9 bits) it drives; bit(s) "q[31..9]" have no fanouts ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -1186,28 +1328,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 35                          ;
-;     CLR               ; 1                           ;
-;     CLR SLD           ; 30                          ;
+; arriav_ff             ; 11                          ;
+;     CLR SLD           ; 7                           ;
 ;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 811                         ;
-;     arith             ; 92                          ;
-;         1 data inputs ; 67                          ;
-;         2 data inputs ; 14                          ;
-;         4 data inputs ; 11                          ;
-;     extend            ; 57                          ;
-;         7 data inputs ; 57                          ;
-;     normal            ; 662                         ;
+; arriav_lcell_comb     ; 502                         ;
+;     arith             ; 42                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 53                          ;
-;         3 data inputs ; 73                          ;
-;         4 data inputs ; 53                          ;
-;         5 data inputs ; 66                          ;
-;         6 data inputs ; 416                         ;
-; boundary_port         ; 163                         ;
+;         1 data inputs ; 19                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 4                           ;
+;     extend            ; 9                           ;
+;         7 data inputs ; 9                           ;
+;     normal            ; 451                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 65                          ;
+;         5 data inputs ; 68                          ;
+;         6 data inputs ; 255                         ;
+; boundary_port         ; 140                         ;
+; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.20                       ;
-; Average LUT depth     ; 14.07                       ;
+; Max LUT depth         ; 12.20                       ;
+; Average LUT depth     ; 10.12                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1216,7 +1360,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1226,10 +1370,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon May 29 18:45:59 2023
+    Info: Processing started: Tue May 30 11:17:53 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file rom_1.v
+    Info (12023): Found entity 1: rom_1 File: D:/processor/rom_1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file laboratorio 3/alu/alu/zeroflag.sv
     Info (12023): Found entity 1: zeroflag File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file laboratorio 3/alu/alu/testbench.sv
@@ -1297,20 +1443,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file flopenr
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
     Info (12023): Found entity 1: mux2 File: D:/processor/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: D:/processor/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: D:/processor/decoder.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file condlogic.sv
     Info (12023): Found entity 1: condlogic File: D:/processor/condlogic.sv Line: 1
-    Info (12023): Found entity 2: condcheck File: D:/processor/condlogic.sv Line: 25
+    Info (12023): Found entity 2: condcheck File: D:/processor/condlogic.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
     Info (12023): Found entity 1: datapath File: D:/processor/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
     Info (12023): Found entity 1: arm File: D:/processor/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
     Info (12023): Found entity 1: controller File: D:/processor/controller.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rom_1.v
-    Info (12023): Found entity 1: rom_1 File: D:/processor/rom_1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file ram_1.v
     Info (12023): Found entity 1: ram_1 File: D:/processor/ram_1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file rom_2.v
+    Info (12023): Found entity 1: rom_2 File: D:/processor/rom_2.v Line: 40
+Info (12021): Found 0 design units, including 0 entities, in source file p_c.sv
 Warning (10236): Verilog HDL Implicit Net warning at testbench_sumador_n.sv(9): created implicit net for "caOut" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv Line: 9
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(4): created implicit net for "N1" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 4
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(6): created implicit net for "N3" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 6
@@ -1322,11 +1469,33 @@ Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(10): creat
 Warning (10236): Verilog HDL Implicit Net warning at arm.sv(14): created implicit net for "RegWriteRegWrite" File: D:/processor/arm.sv Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at arm.sv(15): created implicit net for "MemToReg" File: D:/processor/arm.sv Line: 15
 Info (12127): Elaborating entity "arm" for the top level hierarchy
+Info (12128): Elaborating entity "rom_2" for hierarchy "rom_2:rom" File: D:/processor/arm.sv Line: 13
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_2:rom|altsyncram:altsyncram_component" File: D:/processor/rom_2.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom_2:rom|altsyncram:altsyncram_component" File: D:/processor/rom_2.v Line: 82
+Info (12133): Instantiated megafunction "rom_2:rom|altsyncram:altsyncram_component" with the following parameter: File: D:/processor/rom_2.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "rom_2.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "512"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "9"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oaf1.tdf
+    Info (12023): Found entity 1: altsyncram_oaf1 File: D:/processor/db/altsyncram_oaf1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_oaf1" for hierarchy "rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated" File: d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "controller" for hierarchy "controller:c" File: D:/processor/arm.sv Line: 15
 Info (12128): Elaborating entity "decoder" for hierarchy "controller:c|decoder:dec" File: D:/processor/controller.sv Line: 17
+Warning (10034): Output port "NoWrite" at decoder.sv(10) has no driver File: D:/processor/decoder.sv Line: 10
 Info (12128): Elaborating entity "condlogic" for hierarchy "controller:c|condlogic:cl" File: D:/processor/controller.sv Line: 20
-Info (12128): Elaborating entity "flopenr" for hierarchy "controller:c|condlogic:cl|flopenr:flagreg1" File: D:/processor/condlogic.sv Line: 13
-Info (12128): Elaborating entity "condcheck" for hierarchy "controller:c|condlogic:cl|condcheck:cc" File: D:/processor/condlogic.sv Line: 18
+Info (12128): Elaborating entity "flopenr" for hierarchy "controller:c|condlogic:cl|flopenr:flagreg1" File: D:/processor/condlogic.sv Line: 14
+Info (12128): Elaborating entity "condcheck" for hierarchy "controller:c|condlogic:cl|condcheck:cc" File: D:/processor/condlogic.sv Line: 19
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: D:/processor/arm.sv Line: 21
 Warning (10034): Output port "WriteData" at datapath.sv(12) has no driver File: D:/processor/datapath.sv Line: 12
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:pcmux" File: D:/processor/datapath.sv Line: 21
@@ -1360,7 +1529,7 @@ Warning (10240): Verilog HDL Always Construct warning at zeroflag.sv(4): inferri
 Info (10041): Inferred latch for "out" at zeroflag.sv(4) File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 4
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "datapath:dp|register_file:rf|rf" is uninferred due to asynchronous read logic File: D:/processor/register_file.sv Line: 8
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "WriteData[0]" is stuck at GND File: D:/processor/arm.sv Line: 5
     Warning (13410): Pin "WriteData[1]" is stuck at GND File: D:/processor/arm.sv Line: 5
@@ -1398,7 +1567,39 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file D:/processor/output_files/processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 32 input pin(s) that do not drive logic
+Warning (21074): Design contains 64 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Instr[0]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[1]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[2]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[3]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[4]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[5]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[6]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[7]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[8]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[9]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[10]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[11]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[12]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[13]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[14]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[15]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[16]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[17]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[18]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[19]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[20]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[21]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[22]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[23]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[24]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[25]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[26]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[27]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[28]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[29]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[30]" File: D:/processor/arm.sv Line: 3
+    Warning (15610): No output dependent on input pin "Instr[31]" File: D:/processor/arm.sv Line: 3
     Warning (15610): No output dependent on input pin "ReadData[0]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[1]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[2]" File: D:/processor/arm.sv Line: 6
@@ -1431,15 +1632,16 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ReadData[29]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[30]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[31]" File: D:/processor/arm.sv Line: 6
-Info (21057): Implemented 1005 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 682 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 97 output pins
-    Info (21061): Implemented 842 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Mon May 29 18:46:16 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:37
+    Info (21059): Implemented 74 output pins
+    Info (21061): Implemented 510 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 114 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Tue May 30 11:18:09 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+

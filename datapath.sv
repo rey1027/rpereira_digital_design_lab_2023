@@ -7,7 +7,7 @@ module datapath(input  logic        clk, reset,
                 input  logic        MemtoReg,
                 input  logic        PCSrc,
                 output logic [3:0]  ALUFlags,
-                output logic [31:0] PC,
+                output logic [8:0] PC,
                 input  logic [31:0] Instr,
                 output logic [31:0] ALUResult, WriteData,
                 input  logic [31:0] ReadData);
