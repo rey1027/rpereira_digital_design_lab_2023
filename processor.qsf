@@ -54,6 +54,36 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/zeroflag.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/testbench.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/neflag.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/mux_.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/main.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/caflag.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/alu/alu.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/testbench.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Restador/tb_restador_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Restador/tb_restador.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/testbench_alu.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/or_gate.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "Laboratorio 3/ALU/Operandos_logicos/and_gate.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE register_file.sv
 set_global_assignment -name SYSTEMVERILOG_FILE adder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
@@ -63,10 +93,12 @@ set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE condlogic.sv
 set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
-set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MIF_FILE rom_1.mif
+set_global_assignment -name QIP_FILE rom_1.qip
+set_global_assignment -name MIF_FILE ram_1.mif
+set_global_assignment -name QIP_FILE ram_1.qip

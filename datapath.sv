@@ -2,7 +2,7 @@ module datapath(input  logic        clk, reset,
                 input  logic [1:0]  RegSrc,
                 input  logic        RegWrite,
                 input  logic [1:0]  ImmSrc,
-                input  logic        ALUSrc, Reverse,
+                input  logic        ALUSrc,
                 input  logic [1:0]  ALUControl,
                 input  logic        MemtoReg,
                 input  logic        PCSrc,
@@ -31,11 +31,13 @@ module datapath(input  logic        clk, reset,
                  RD1, RD2);
   mux2 #(32)  resmux(ALUResult, ReadData, MemtoReg, Result);
   extend      ext(Instr[23:0], ImmSrc, ExtImm);
-
+  
+  
+	//Cambiar la logica 
+	
   // ALU logic
-  mux2 #(32)  srcamux(RD1, RD2, Reverse, SrcA);         // Mux to determine SrcA
-  mux2 #(32)  Wdmux(RD2, RD1, Reverse, WriteData);      // Mux to determine WriteData
-  mux2 #(32)  srcbmux(WriteData, ExtImm, ALUSrc, SrcB); // Mux to determine SrcB
- // alu         alu(SrcA, SrcB, ALUControl, 
-  //                ALUResult, ALUFlags);
+ // mux2 #(32)  srcamux(RD1, RD2, Reverse, SrcA);         
+//  mux2 #(32)  Wdmux(RD2, RD1, Reverse, WriteData);      
+  mux2 #(32)  srcbmux(WriteData, ExtImm, ALUSrc, SrcB); 
+  alu #(32)   alu(SrcA, SrcB, ALUControl,ALUResult, ALUFlags[0],ALUFlags[1],ALUFlags[2],ALUFlags[3]);
 endmodule
