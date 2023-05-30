@@ -38,6 +38,6 @@ module datapath(input  logic        clk, reset,
   // ALU logic
  // mux2 #(32)  srcamux(RD1, RD2, Reverse, SrcA);         
 //  mux2 #(32)  Wdmux(RD2, RD1, Reverse, WriteData);      
-  mux2 #(32)  srcbmux(WriteData, ExtImm, ALUSrc, SrcB); 
-  alu #(32)   alu(SrcA, SrcB, ALUControl,ALUResult, ALUFlags[0],ALUFlags[1],ALUFlags[2],ALUFlags[3]);
+  mux2 #(32)  srcbmux(RD2, ExtImm, ALUSrc, SrcB); 
+  alu #(32)   alu(RD1, SrcB, ALUControl,ALUResult, ALUFlags[0],ALUFlags[1],ALUFlags[2],ALUFlags[3]);
 endmodule

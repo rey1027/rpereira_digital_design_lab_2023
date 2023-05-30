@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Mon May 29 18:37:16 2023
+Mon May 29 18:46:16 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -42,15 +42,14 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
  34. Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"
  35. Port Connectivity Checks: "datapath:dp|alu:alu|sumador_n:sum1"
  36. Port Connectivity Checks: "datapath:dp|alu:alu"
- 37. Port Connectivity Checks: "datapath:dp|register_file:rf"
- 38. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
- 39. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
- 40. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
- 41. Port Connectivity Checks: "controller:c"
- 42. Post-Synthesis Netlist Statistics for Top Partition
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
- 45. Analysis & Synthesis Suppressed Messages
+ 37. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
+ 38. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
+ 39. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
+ 40. Port Connectivity Checks: "controller:c"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -77,13 +76,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 29 18:37:16 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon May 29 18:46:16 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; processor                                      ;
 ; Top-level Entity Name           ; arm                                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 34                                             ;
+; Total registers                 ; 35                                             ;
 ; Total pins                      ; 163                                            ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -197,7 +196,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -240,75 +241,613 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 64        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 111       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 17        ;
-;     -- 5 input functions                    ; 23        ;
-;     -- 4 input functions                    ; 18        ;
-;     -- <=3 input functions                  ; 53        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 34        ;
-;                                             ;           ;
-; I/O pins                                    ; 163       ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 34        ;
-; Total fan-out                               ; 797       ;
-; Average fan-out                             ; 1.69      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 642                             ;
+;                                             ;                                 ;
+; Combinational ALUT usage for logic          ; 810                             ;
+;     -- 7 input functions                    ; 57                              ;
+;     -- 6 input functions                    ; 416                             ;
+;     -- 5 input functions                    ; 66                              ;
+;     -- 4 input functions                    ; 64                              ;
+;     -- <=3 input functions                  ; 207                             ;
+;                                             ;                                 ;
+; Dedicated logic registers                   ; 35                              ;
+;                                             ;                                 ;
+; I/O pins                                    ; 163                             ;
+;                                             ;                                 ;
+; Total DSP Blocks                            ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; controller:c|decoder:dec|Mux0~0 ;
+; Maximum fan-out                             ; 96                              ;
+; Total fan-out                               ; 4387                            ;
+; Average fan-out                             ; 3.75                            ;
++---------------------------------------------+---------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name   ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+---------------+--------------+
-; |arm                                         ; 111 (0)             ; 34 (0)                    ; 0                 ; 0          ; 163  ; 0            ; |arm                                                                    ; arm           ; work         ;
-;    |controller:c|                            ; 8 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c                                                       ; controller    ; work         ;
-;       |condlogic:cl|                         ; 6 (5)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl                                          ; condlogic     ; work         ;
-;          |condcheck:cc|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|condcheck:cc                             ; condcheck     ; work         ;
-;          |flopenr:flagreg0|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg0                         ; flopenr       ; work         ;
-;       |decoder:dec|                          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|decoder:dec                                           ; decoder       ; work         ;
-;    |datapath:dp|                             ; 103 (0)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp                                                        ; datapath      ; work         ;
-;       |adder:pcadd1|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd1                                           ; adder         ; work         ;
-;       |alu:alu|                              ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu                                                ; alu           ; work         ;
-;          |mux_:mux1|                         ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|mux_:mux1                                      ; mux_          ; work         ;
-;          |neflag:nf|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|neflag:nf                                      ; neflag        ; work         ;
-;          |restador_n:res1|                   ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1                                ; restador_n    ; work         ;
-;             |restador_1bit:restador[10].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[10].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[11].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[11].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[12].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[12].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[15].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[15].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[1].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[1].dut  ; restador_1bit ; work         ;
-;             |restador_1bit:restador[27].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[27].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[28].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[28].dut ; restador_1bit ; work         ;
-;             |restador_1bit:restador[2].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[2].dut  ; restador_1bit ; work         ;
-;             |restador_1bit:restador[5].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[5].dut  ; restador_1bit ; work         ;
-;             |restador_1bit:restador[7].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[7].dut  ; restador_1bit ; work         ;
-;          |zeroflag:zf|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|zeroflag:zf                                    ; zeroflag      ; work         ;
-;       |flopr:pcreg|                          ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|flopr:pcreg                                            ; flopr         ; work         ;
-;       |mux2:srcbmux|                         ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|mux2:srcbmux                                           ; mux2          ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name    ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
+; |arm                                         ; 810 (0)             ; 35 (0)                    ; 0                 ; 0          ; 163  ; 0            ; |arm                                                                    ; arm            ; work         ;
+;    |controller:c|                            ; 16 (0)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c                                                       ; controller     ; work         ;
+;       |condlogic:cl|                         ; 11 (5)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl                                          ; condlogic      ; work         ;
+;          |condcheck:cc|                      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|condcheck:cc                             ; condcheck      ; work         ;
+;          |flopenr:flagreg0|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg0                         ; flopenr        ; work         ;
+;          |flopenr:flagreg1|                  ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|condlogic:cl|flopenr:flagreg1                         ; flopenr        ; work         ;
+;       |decoder:dec|                          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|controller:c|decoder:dec                                           ; decoder        ; work         ;
+;    |datapath:dp|                             ; 794 (0)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp                                                        ; datapath       ; work         ;
+;       |adder:pcadd1|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd1                                           ; adder          ; work         ;
+;       |adder:pcadd2|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|adder:pcadd2                                           ; adder          ; work         ;
+;       |alu:alu|                              ; 628 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu                                                ; alu            ; work         ;
+;          |lrl_arithmetic:lrl1|               ; 165 (165)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lrl_arithmetic:lrl1                            ; lrl_arithmetic ; work         ;
+;          |lsl_arithmetic:lsl1|               ; 196 (196)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1                            ; lsl_arithmetic ; work         ;
+;          |mux_:mux1|                         ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|mux_:mux1                                      ; mux_           ; work         ;
+;          |neflag:nf|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|neflag:nf                                      ; neflag         ; work         ;
+;          |restador_n:res1|                   ; 95 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1                                ; restador_n     ; work         ;
+;             |restador_1bit:restador[10].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[10].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[11].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[11].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[12].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[12].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[13].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[13].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[14].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[14].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[15].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[15].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[16].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[16].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[17].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[17].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[18].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[18].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[19].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[19].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[1].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[1].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[20].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[20].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[21].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[21].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[22].dut| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[22].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[23].dut| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[23].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[24].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[24].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[25].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[25].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[26].dut| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[26].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[27].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[27].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[28].dut| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[28].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[29].dut| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[29].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[2].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[2].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[30].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[30].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[31].dut| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[31].dut ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[3].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[3].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[4].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[4].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[5].dut|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[5].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[6].dut|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[6].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[7].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[7].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[8].dut|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[8].dut  ; restador_1bit  ; work         ;
+;             |restador_1bit:restador[9].dut|  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|restador_n:res1|restador_1bit:restador[9].dut  ; restador_1bit  ; work         ;
+;          |sumador_n:sum1|                    ; 125 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1                                 ; sumador_n      ; work         ;
+;             |sumador_1bit:sumador[10].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[10].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[11].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[11].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[12].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[12].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[13].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[13].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[14].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[14].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[15].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[15].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[16].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[16].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[17].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[17].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[18].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[18].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[19].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[19].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[1].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[1].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[20].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[20].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[21].dut|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[21].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[22].dut|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[22].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[23].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[23].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[24].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[24].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[25].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[25].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[26].dut|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[26].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[27].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[27].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[28].dut|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[28].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[29].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[29].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[2].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[2].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[30].dut|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[30].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[31].dut|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[31].dut    ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[3].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[3].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[4].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[4].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[5].dut|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[5].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[6].dut|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[6].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[7].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[7].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[8].dut|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[8].dut     ; sumador_1bit   ; work         ;
+;             |sumador_1bit:sumador[9].dut|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[9].dut     ; sumador_1bit   ; work         ;
+;          |zeroflag:zf|                       ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|alu:alu|zeroflag:zf                                    ; zeroflag       ; work         ;
+;       |flopr:pcreg|                          ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|flopr:pcreg                                            ; flopr          ; work         ;
+;       |mux2:srcbmux|                         ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|mux2:srcbmux                                           ; mux2           ; work         ;
+;       |register_file:rf|                     ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |arm|datapath:dp|register_file:rf                                       ; register_file  ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+---------------------------------------------------+----------------------------------------+
-; Register name                                     ; Reason for Removal                     ;
-+---------------------------------------------------+----------------------------------------+
-; controller:c|condlogic:cl|flopenr:flagreg1|q[0,1] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2             ;                                        ;
-+---------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                       ;
++-------------------------------------------------+----------------------------------------+
+; Register name                                   ; Reason for Removal                     ;
++-------------------------------------------------+----------------------------------------+
+; controller:c|condlogic:cl|flopenr:flagreg1|q[0] ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~0               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~32              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~64              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~96              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~128             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~160             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~192             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~224             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~256             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~288             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~320             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~352             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~384             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~416             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~448             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~4               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~36              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~68              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~100             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~132             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~164             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~196             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~228             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~260             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~292             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~324             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~356             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~388             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~420             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~452             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~3               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~35              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~67              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~99              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~131             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~163             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~195             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~227             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~259             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~291             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~323             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~355             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~387             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~419             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~451             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~1               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~33              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~65              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~97              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~129             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~161             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~193             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~225             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~257             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~289             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~321             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~353             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~385             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~417             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~449             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~30              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~62              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~94              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~126             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~158             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~190             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~222             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~254             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~286             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~318             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~350             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~382             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~414             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~446             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~478             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~31              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~63              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~95              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~127             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~159             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~191             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~223             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~255             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~287             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~319             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~351             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~383             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~415             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~447             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~479             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~29              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~61              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~93              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~125             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~157             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~189             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~221             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~253             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~285             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~317             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~349             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~381             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~413             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~445             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~477             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~16              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~48              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~80              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~112             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~144             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~176             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~208             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~240             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~272             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~304             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~336             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~368             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~400             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~432             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~464             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~14              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~46              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~78              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~110             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~142             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~174             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~206             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~238             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~270             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~302             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~334             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~366             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~398             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~430             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~462             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~15              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~47              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~79              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~111             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~143             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~175             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~207             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~239             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~271             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~303             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~335             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~367             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~399             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~431             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~463             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~13              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~45              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~77              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~109             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~141             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~173             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~205             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~237             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~269             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~301             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~333             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~365             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~397             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~429             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~461             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~24              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~56              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~88              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~120             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~152             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~184             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~216             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~248             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~280             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~312             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~344             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~376             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~408             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~440             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~472             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~22              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~54              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~86              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~118             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~150             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~182             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~214             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~246             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~278             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~310             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~342             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~374             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~406             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~438             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~470             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~23              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~55              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~87              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~119             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~151             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~183             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~215             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~247             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~279             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~311             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~343             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~375             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~407             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~439             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~471             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~21              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~53              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~85              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~117             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~149             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~181             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~213             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~245             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~277             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~309             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~341             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~373             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~405             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~437             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~469             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~8               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~40              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~72              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~104             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~136             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~168             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~200             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~232             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~264             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~296             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~328             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~360             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~392             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~424             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~456             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~6               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~38              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~70              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~102             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~134             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~166             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~198             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~230             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~262             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~294             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~326             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~358             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~390             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~422             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~454             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~7               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~39              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~71              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~103             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~135             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~167             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~199             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~231             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~263             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~295             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~327             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~359             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~391             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~423             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~455             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~5               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~37              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~69              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~101             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~133             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~165             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~197             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~229             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~261             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~293             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~325             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~357             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~389             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~421             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~453             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~28              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~60              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~92              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~124             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~156             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~188             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~220             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~252             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~284             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~316             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~348             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~380             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~412             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~444             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~476             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~26              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~58              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~90              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~122             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~154             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~186             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~218             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~250             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~282             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~314             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~346             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~378             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~410             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~442             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~474             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~27              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~59              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~91              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~123             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~155             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~187             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~219             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~251             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~283             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~315             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~347             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~379             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~411             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~443             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~475             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~25              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~57              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~89              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~121             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~153             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~185             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~217             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~249             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~281             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~313             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~345             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~377             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~409             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~441             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~473             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~12              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~44              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~76              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~108             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~140             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~172             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~204             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~236             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~268             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~300             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~332             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~364             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~396             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~428             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~460             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~10              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~42              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~74              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~106             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~138             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~170             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~202             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~234             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~266             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~298             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~330             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~362             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~394             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~426             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~458             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~11              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~43              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~75              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~107             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~139             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~171             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~203             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~235             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~267             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~299             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~331             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~363             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~395             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~427             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~459             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~9               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~41              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~73              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~105             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~137             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~169             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~201             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~233             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~265             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~297             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~329             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~361             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~393             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~425             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~457             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~20              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~52              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~84              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~116             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~148             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~180             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~212             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~244             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~276             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~308             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~340             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~372             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~404             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~436             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~468             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~18              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~50              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~82              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~114             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~146             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~178             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~210             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~242             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~274             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~306             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~338             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~370             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~402             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~434             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~466             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~19              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~51              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~83              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~115             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~147             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~179             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~211             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~243             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~275             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~307             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~339             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~371             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~403             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~435             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~467             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~17              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~49              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~81              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~113             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~145             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~177             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~209             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~241             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~273             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~305             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~337             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~369             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~401             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~433             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~465             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~2               ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~34              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~66              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~98              ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~130             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~162             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~194             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~226             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~258             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~290             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~322             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~354             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~386             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~418             ; Stuck at GND due to stuck port data_in ;
+; datapath:dp|register_file:rf|rf~450             ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 481         ;                                        ;
++-------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -316,28 +855,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 35    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 30    ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Clear ; 35    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[15]      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[0]       ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[5]       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|mux_:mux1|Mux4  ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|mux_:mux1|Mux28 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[11]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[30]                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux31 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux0  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|alu:alu|lsl_arithmetic:lsl1|Mux2  ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[24]                ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[0]                 ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[2]                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |arm|datapath:dp|mux2:srcbmux|y[11]                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------+
@@ -599,16 +1140,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|register_file:rf"                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rd1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rd2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Port Connectivity Checks: "datapath:dp|mux2:ra1mux" ;
 +------+-------+----------+---------------------------+
@@ -655,23 +1186,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 34                          ;
+; arriav_ff             ; 35                          ;
+;     CLR               ; 1                           ;
 ;     CLR SLD           ; 30                          ;
 ;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 112                         ;
-;     arith             ; 30                          ;
-;         1 data inputs ; 30                          ;
-;     normal            ; 82                          ;
-;         0 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 811                         ;
+;     arith             ; 92                          ;
+;         1 data inputs ; 67                          ;
 ;         2 data inputs ; 14                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 18                          ;
-;         5 data inputs ; 23                          ;
-;         6 data inputs ; 17                          ;
+;         4 data inputs ; 11                          ;
+;     extend            ; 57                          ;
+;         7 data inputs ; 57                          ;
+;     normal            ; 662                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 73                          ;
+;         4 data inputs ; 53                          ;
+;         5 data inputs ; 66                          ;
+;         6 data inputs ; 416                         ;
 ; boundary_port         ; 163                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.39                        ;
+; Max LUT depth         ; 16.20                       ;
+; Average LUT depth     ; 14.07                       ;
 +-----------------------+-----------------------------+
 
 
@@ -680,7 +1216,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -690,7 +1226,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon May 29 18:37:02 2023
+    Info: Processing started: Mon May 29 18:45:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -771,6 +1307,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
     Info (12023): Found entity 1: arm File: D:/processor/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
     Info (12023): Found entity 1: controller File: D:/processor/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rom_1.v
+    Info (12023): Found entity 1: rom_1 File: D:/processor/rom_1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ram_1.v
+    Info (12023): Found entity 1: ram_1 File: D:/processor/ram_1.v Line: 40
 Warning (10236): Verilog HDL Implicit Net warning at testbench_sumador_n.sv(9): created implicit net for "caOut" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv Line: 9
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(4): created implicit net for "N1" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 4
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(6): created implicit net for "N3" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 6
@@ -788,13 +1328,14 @@ Info (12128): Elaborating entity "condlogic" for hierarchy "controller:c|condlog
 Info (12128): Elaborating entity "flopenr" for hierarchy "controller:c|condlogic:cl|flopenr:flagreg1" File: D:/processor/condlogic.sv Line: 13
 Info (12128): Elaborating entity "condcheck" for hierarchy "controller:c|condlogic:cl|condcheck:cc" File: D:/processor/condlogic.sv Line: 18
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: D:/processor/arm.sv Line: 21
+Warning (10034): Output port "WriteData" at datapath.sv(12) has no driver File: D:/processor/datapath.sv Line: 12
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:pcmux" File: D:/processor/datapath.sv Line: 21
 Info (12128): Elaborating entity "flopr" for hierarchy "datapath:dp|flopr:pcreg" File: D:/processor/datapath.sv Line: 22
 Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|adder:pcadd1" File: D:/processor/datapath.sv Line: 23
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:ra1mux" File: D:/processor/datapath.sv Line: 27
 Info (12128): Elaborating entity "register_file" for hierarchy "datapath:dp|register_file:rf" File: D:/processor/datapath.sv Line: 31
 Info (12128): Elaborating entity "extend" for hierarchy "datapath:dp|extend:ext" File: D:/processor/datapath.sv Line: 33
-Info (12128): Elaborating entity "alu" for hierarchy "datapath:dp|alu:alu" File: D:/processor/datapath.sv Line: 39
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:dp|alu:alu" File: D:/processor/datapath.sv Line: 42
 Warning (10034): Output port "fo" at alu.sv(5) has no driver File: D:/processor/Laboratorio 3/ALU/alu/alu.sv Line: 5
 Info (12128): Elaborating entity "sumador_n" for hierarchy "datapath:dp|alu:alu|sumador_n:sum1" File: D:/processor/Laboratorio 3/ALU/alu/alu.sv Line: 22
 Info (12128): Elaborating entity "sumador_1bit" for hierarchy "datapath:dp|alu:alu|sumador_n:sum1|sumador_1bit:sumador[0].dut" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv Line: 10
@@ -817,6 +1358,8 @@ Info (12128): Elaborating entity "mux_" for hierarchy "datapath:dp|alu:alu|mux_:
 Info (12128): Elaborating entity "zeroflag" for hierarchy "datapath:dp|alu:alu|zeroflag:zf" File: D:/processor/Laboratorio 3/ALU/alu/alu.sv Line: 35
 Warning (10240): Verilog HDL Always Construct warning at zeroflag.sv(4): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 4
 Info (10041): Inferred latch for "out" at zeroflag.sv(4) File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 4
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "datapath:dp|register_file:rf|rf" is uninferred due to asynchronous read logic File: D:/processor/register_file.sv Line: 8
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "WriteData[0]" is stuck at GND File: D:/processor/arm.sv Line: 5
@@ -888,15 +1431,15 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ReadData[29]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[30]" File: D:/processor/arm.sv Line: 6
     Warning (15610): No output dependent on input pin "ReadData[31]" File: D:/processor/arm.sv Line: 6
-Info (21057): Implemented 276 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1005 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 66 input pins
     Info (21059): Implemented 97 output pins
-    Info (21061): Implemented 113 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Mon May 29 18:37:16 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:34
+    Info (21061): Implemented 842 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Mon May 29 18:46:16 2023
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 
 +------------------------------------------+
