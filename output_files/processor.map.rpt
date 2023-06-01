@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Tue May 30 11:18:09 2023
+Wed May 31 19:08:37 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -20,43 +20,48 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
  12. General Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated
- 15. Parameter Settings for User Entity Instance: rom_2:rom|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1
- 17. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0
- 18. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
- 19. Parameter Settings for User Entity Instance: datapath:dp|flopr:pcreg
- 20. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1
- 21. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2
- 22. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux
- 23. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux
- 24. Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux
- 25. Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux
- 26. Parameter Settings for User Entity Instance: datapath:dp|alu:alu
- 27. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|sumador_n:sum1
- 28. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|restador_n:res1
- 29. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_arithmetic:lsl1
- 30. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_arithmetic:lrl1
- 31. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|and_gate_n:and1
- 32. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|or_gate_n:or1
- 33. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|xor_gate_n:xor1
- 34. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_logic:lsl2
- 35. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_logic:lrl2
- 36. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|n_not_gate:not1
- 37. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux_:mux1
- 38. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroflag:zf
- 39. altsyncram Parameter Settings by Entity Instance
- 40. Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"
- 41. Port Connectivity Checks: "datapath:dp|alu:alu|sumador_n:sum1"
- 42. Port Connectivity Checks: "datapath:dp|alu:alu"
- 43. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
- 44. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
- 45. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
- 46. Port Connectivity Checks: "datapath:dp|flopr:pcreg"
- 47. Port Connectivity Checks: "controller:c"
- 48. Post-Synthesis Netlist Statistics for Top Partition
- 49. Elapsed Time Per Partition
- 50. Analysis & Synthesis Messages
- 51. Analysis & Synthesis Suppressed Messages
+ 15. Source assignments for ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated
+ 16. Parameter Settings for User Entity Instance: rom_2:rom|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1
+ 18. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0
+ 19. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
+ 20. Parameter Settings for User Entity Instance: datapath:dp|flopr:pcreg
+ 21. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1
+ 22. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2
+ 23. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux
+ 24. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux
+ 25. Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux
+ 26. Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux
+ 27. Parameter Settings for User Entity Instance: datapath:dp|alu:alu
+ 28. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|sumador_n:sum1
+ 29. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|restador_n:res1
+ 30. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_arithmetic:lsl1
+ 31. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_arithmetic:lrl1
+ 32. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|and_gate_n:and1
+ 33. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|or_gate_n:or1
+ 34. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|xor_gate_n:xor1
+ 35. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lsl_logic:lsl2
+ 36. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|lrl_logic:lrl2
+ 37. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|n_not_gate:not1
+ 38. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux_:mux1
+ 39. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroflag:zf
+ 40. Parameter Settings for User Entity Instance: ram_1:ram|altsyncram:altsyncram_component
+ 41. Parameter Settings for User Entity Instance: mux2:mux_out
+ 42. altsyncram Parameter Settings by Entity Instance
+ 43. Port Connectivity Checks: "mux2:mux_out"
+ 44. Port Connectivity Checks: "ram_1:ram"
+ 45. Port Connectivity Checks: "datapath:dp|alu:alu|restador_n:res1"
+ 46. Port Connectivity Checks: "datapath:dp|alu:alu|sumador_n:sum1"
+ 47. Port Connectivity Checks: "datapath:dp|alu:alu"
+ 48. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
+ 49. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
+ 50. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
+ 51. Port Connectivity Checks: "datapath:dp|flopr:pcreg"
+ 52. Port Connectivity Checks: "controller:c"
+ 53. Post-Synthesis Netlist Statistics for Top Partition
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
+ 56. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -83,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 30 11:18:09 2023          ;
+; Analysis & Synthesis Status     ; Successful - Wed May 31 19:08:37 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; processor                                      ;
 ; Top-level Entity Name           ; arm                                            ;
@@ -243,6 +248,8 @@ https://fpgasoftware.intel.com/eula.
 ; datapath.sv                                                          ; yes             ; User SystemVerilog HDL File      ; D:/processor/datapath.sv                                                          ;         ;
 ; arm.sv                                                               ; yes             ; User SystemVerilog HDL File      ; D:/processor/arm.sv                                                               ;         ;
 ; controller.sv                                                        ; yes             ; User SystemVerilog HDL File      ; D:/processor/controller.sv                                                        ;         ;
+; ram_1.mif                                                            ; yes             ; User Memory Initialization File  ; D:/processor/ram_1.mif                                                            ;         ;
+; ram_1.v                                                              ; yes             ; User Wizard-Generated File       ; D:/processor/ram_1.v                                                              ;         ;
 ; rom_2.mif                                                            ; yes             ; User Memory Initialization File  ; D:/processor/rom_2.mif                                                            ;         ;
 ; rom_2.v                                                              ; yes             ; User Wizard-Generated File       ; D:/processor/rom_2.v                                                              ;         ;
 ; altsyncram.tdf                                                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
@@ -255,6 +262,7 @@ https://fpgasoftware.intel.com/eula.
 ; altram.inc                                                           ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc              ;         ;
 ; altdpram.inc                                                         ; yes             ; Megafunction                     ; d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc            ;         ;
 ; db/altsyncram_oaf1.tdf                                               ; yes             ; Auto-Generated Megafunction      ; D:/processor/db/altsyncram_oaf1.tdf                                               ;         ;
+; db/altsyncram_ghn1.tdf                                               ; yes             ; Auto-Generated Megafunction      ; D:/processor/db/altsyncram_ghn1.tdf                                               ;         ;
 +----------------------------------------------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -386,6 +394,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+-----------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |arm|ram_1:ram  ; ram_1.v         ;
 ; Altera ; ROM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |arm|rom_2:rom  ; rom_2.v         ;
 +--------+--------------+---------+--------------+--------------+-----------------+-----------------+
 
@@ -932,6 +941,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-----------------------------------+
 
 
++-------------------------------------------------------------------------------------------------+
+; Source assignments for ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------+
+; Assignment                      ; Value              ; From ; To                                ;
++---------------------------------+--------------------+------+-----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                 ;
++---------------------------------+--------------------+------+-----------------------------------+
+
+
 +----------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: rom_2:rom|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+----------------------------+
@@ -1223,12 +1241,83 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ram_1:ram|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------+
+; Parameter Name                     ; Value                ; Type                       ;
++------------------------------------+----------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                    ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                    ;
+; WIDTH_A                            ; 8                    ; Signed Integer             ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer             ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer             ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WIDTH_B                            ; 1                    ; Untyped                    ;
+; WIDTHAD_B                          ; 1                    ; Untyped                    ;
+; NUMWORDS_B                         ; 1                    ; Untyped                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; ram_1.mif            ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_ghn1      ; Untyped                    ;
++------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:mux_out ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 8     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                      ;
 +-------------------------------------------+-------------------------------------------+
 ; Name                                      ; Value                                     ;
 +-------------------------------------------+-------------------------------------------+
-; Number of entity instances                ; 1                                         ;
+; Number of entity instances                ; 2                                         ;
 ; Entity Instance                           ; rom_2:rom|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                       ;
 ;     -- WIDTH_A                            ; 32                                        ;
@@ -1240,7 +1329,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                              ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                      ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ;
+; Entity Instance                           ; ram_1:ram|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                               ;
+;     -- WIDTH_A                            ; 8                                         ;
+;     -- NUMWORDS_A                         ; 256                                       ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                    ;
+;     -- WIDTH_B                            ; 1                                         ;
+;     -- NUMWORDS_B                         ; 1                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ;
 +-------------------------------------------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux2:mux_out"                                                                                                                                                                         ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d0      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d1      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; y       ; Output ; Warning  ; Output or bidir port (8 bits) is smaller than the port expression (32 bits) it drives.  The 24 most-significant bit(s) in the port expression will be connected to GND.            ;
+; y[7..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ram_1:ram"                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; q       ; Output ; Warning  ; Output or bidir port (8 bits) is smaller than the port expression (32 bits) it drives.  The 24 most-significant bit(s) in the port expression will be connected to GND.            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1319,7 +1442,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; RegWrite ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; MemToReg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -1360,7 +1482,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1370,7 +1492,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue May 30 11:17:53 2023
+    Info: Processing started: Wed May 31 19:08:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1457,7 +1579,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram_1.v
     Info (12023): Found entity 1: ram_1 File: D:/processor/ram_1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_2.v
     Info (12023): Found entity 1: rom_2 File: D:/processor/rom_2.v Line: 40
-Info (12021): Found 0 design units, including 0 entities, in source file p_c.sv
+Info (12021): Found 1 design units, including 1 entities, in source file p_c.sv
+    Info (12023): Found entity 1: p_c File: D:/processor/p_c.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at testbench_sumador_n.sv(9): created implicit net for "caOut" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/testbench_sumador_n.sv Line: 9
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(4): created implicit net for "N1" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 4
 Warning (10236): Verilog HDL Implicit Net warning at sumador_1bit.sv(6): created implicit net for "N3" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv Line: 6
@@ -1466,10 +1589,10 @@ Warning (10236): Verilog HDL Implicit Net warning at tb_restador_n.sv(9): create
 Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(5): created implicit net for "R1" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 5
 Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(8): created implicit net for "R2" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 8
 Warning (10236): Verilog HDL Implicit Net warning at restador_1bit.sv(10): created implicit net for "R3" File: D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv Line: 10
-Warning (10236): Verilog HDL Implicit Net warning at arm.sv(14): created implicit net for "RegWriteRegWrite" File: D:/processor/arm.sv Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at arm.sv(15): created implicit net for "MemToReg" File: D:/processor/arm.sv Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at arm.sv(16): created implicit net for "RegWriteRegWrite" File: D:/processor/arm.sv Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at arm.sv(17): created implicit net for "MemToReg" File: D:/processor/arm.sv Line: 17
 Info (12127): Elaborating entity "arm" for the top level hierarchy
-Info (12128): Elaborating entity "rom_2" for hierarchy "rom_2:rom" File: D:/processor/arm.sv Line: 13
+Info (12128): Elaborating entity "rom_2" for hierarchy "rom_2:rom" File: D:/processor/arm.sv Line: 15
 Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_2:rom|altsyncram:altsyncram_component" File: D:/processor/rom_2.v Line: 82
 Info (12130): Elaborated megafunction instantiation "rom_2:rom|altsyncram:altsyncram_component" File: D:/processor/rom_2.v Line: 82
 Info (12133): Instantiated megafunction "rom_2:rom|altsyncram:altsyncram_component" with the following parameter: File: D:/processor/rom_2.v Line: 82
@@ -1490,13 +1613,13 @@ Info (12133): Instantiated megafunction "rom_2:rom|altsyncram:altsyncram_compone
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oaf1.tdf
     Info (12023): Found entity 1: altsyncram_oaf1 File: D:/processor/db/altsyncram_oaf1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_oaf1" for hierarchy "rom_2:rom|altsyncram:altsyncram_component|altsyncram_oaf1:auto_generated" File: d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "controller" for hierarchy "controller:c" File: D:/processor/arm.sv Line: 15
+Info (12128): Elaborating entity "controller" for hierarchy "controller:c" File: D:/processor/arm.sv Line: 17
 Info (12128): Elaborating entity "decoder" for hierarchy "controller:c|decoder:dec" File: D:/processor/controller.sv Line: 17
 Warning (10034): Output port "NoWrite" at decoder.sv(10) has no driver File: D:/processor/decoder.sv Line: 10
 Info (12128): Elaborating entity "condlogic" for hierarchy "controller:c|condlogic:cl" File: D:/processor/controller.sv Line: 20
 Info (12128): Elaborating entity "flopenr" for hierarchy "controller:c|condlogic:cl|flopenr:flagreg1" File: D:/processor/condlogic.sv Line: 14
 Info (12128): Elaborating entity "condcheck" for hierarchy "controller:c|condlogic:cl|condcheck:cc" File: D:/processor/condlogic.sv Line: 19
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: D:/processor/arm.sv Line: 21
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: D:/processor/arm.sv Line: 23
 Warning (10034): Output port "WriteData" at datapath.sv(12) has no driver File: D:/processor/datapath.sv Line: 12
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:pcmux" File: D:/processor/datapath.sv Line: 21
 Info (12128): Elaborating entity "flopr" for hierarchy "datapath:dp|flopr:pcreg" File: D:/processor/datapath.sv Line: 22
@@ -1527,9 +1650,142 @@ Info (12128): Elaborating entity "mux_" for hierarchy "datapath:dp|alu:alu|mux_:
 Info (12128): Elaborating entity "zeroflag" for hierarchy "datapath:dp|alu:alu|zeroflag:zf" File: D:/processor/Laboratorio 3/ALU/alu/alu.sv Line: 35
 Warning (10240): Verilog HDL Always Construct warning at zeroflag.sv(4): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 4
 Info (10041): Inferred latch for "out" at zeroflag.sv(4) File: D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv Line: 4
+Info (12128): Elaborating entity "ram_1" for hierarchy "ram_1:ram" File: D:/processor/arm.sv Line: 24
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram_1:ram|altsyncram:altsyncram_component" File: D:/processor/ram_1.v Line: 86
+Info (12130): Elaborated megafunction instantiation "ram_1:ram|altsyncram:altsyncram_component" File: D:/processor/ram_1.v Line: 86
+Info (12133): Instantiated megafunction "ram_1:ram|altsyncram:altsyncram_component" with the following parameter: File: D:/processor/ram_1.v Line: 86
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "ram_1.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ghn1.tdf
+    Info (12023): Found entity 1: altsyncram_ghn1 File: D:/processor/db/altsyncram_ghn1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_ghn1" for hierarchy "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated" File: d:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:mux_out" File: D:/processor/arm.sv Line: 25
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ReadData2[31]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[30]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[29]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[28]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[27]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[26]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[25]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[24]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[23]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[22]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[21]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[20]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[19]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[18]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[17]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[16]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[15]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[14]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[13]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[12]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[11]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[10]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[9]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[8]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ReadData2[31]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[30]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[29]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[28]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[27]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[26]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[25]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[24]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[23]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[22]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[21]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[20]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[19]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[18]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[17]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[16]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[15]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[14]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[13]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[12]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[11]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[10]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[9]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[8]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ReadData2[31]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[30]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[29]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[28]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[27]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[26]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[25]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[24]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[23]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[22]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[21]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[20]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[19]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[18]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[17]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[16]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[15]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[14]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[13]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[12]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[11]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[10]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[9]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[8]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ReadData2[31]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[30]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[29]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[28]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[27]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[26]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[25]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[24]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[23]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[22]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[21]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[20]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[19]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[18]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[17]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[16]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[15]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[14]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[13]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[12]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[11]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[10]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[9]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+    Warning (12110): Net "ReadData2[8]" is missing source, defaulting to GND File: D:/processor/arm.sv Line: 13
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[0]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 37
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[1]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 62
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[2]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 87
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[3]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 112
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[4]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 137
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[5]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 162
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[6]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 187
+        Warning (14320): Synthesized away node "ram_1:ram|altsyncram:altsyncram_component|altsyncram_ghn1:auto_generated|q_a[7]" File: D:/processor/db/altsyncram_ghn1.tdf Line: 212
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "datapath:dp|register_file:rf|rf" is uninferred due to asynchronous read logic File: D:/processor/register_file.sv Line: 8
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "WriteData[0]" is stuck at GND File: D:/processor/arm.sv Line: 5
     Warning (13410): Pin "WriteData[1]" is stuck at GND File: D:/processor/arm.sv Line: 5
@@ -1637,10 +1893,10 @@ Info (21057): Implemented 682 device resources after synthesis - the final resou
     Info (21059): Implemented 74 output pins
     Info (21061): Implemented 510 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Tue May 30 11:18:09 2023
-    Info: Elapsed time: 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 224 warnings
+    Info: Peak virtual memory: 4860 megabytes
+    Info: Processing ended: Wed May 31 19:08:37 2023
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:36
 
 
