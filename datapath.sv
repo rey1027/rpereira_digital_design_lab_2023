@@ -21,9 +21,9 @@ mux2 #(32) pcmux(PCPlus4, Result, PCSrc, PCNext);
 
 flopr #(32) pcreg(clk, reset, PCNext, PC);
 
-adder #(32) pcadd1(PC, 32'b100, PCPlus4);
+adder #(32) pcadd1(PC, 32'b1, PCPlus4);
 
-adder #(32) pcadd2(PCPlus4, 32'b100, PCPlus8);
+adder #(32) pcadd2(PCPlus4, 32'b1, PCPlus8);
 
 // register file logic
 mux2 #(4) ra1mux(Instr[19:16], 4'b1111, RegSrc[0], RA1);
