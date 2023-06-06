@@ -1,0 +1,943 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/processor/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1686009816
+!i10b 1
+!s100 NM:l`m9PfRg[F]Agjdn6H1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_k<<DC9kYOlAg42j^aQ0a3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1684792730
+8D:/processor/adder.sv
+FD:/processor/adder.sv
+!i122 23
+L0 1 6
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1686009816.000000
+!s107 D:/processor/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/processor
+Z9 tCvgOpt 0
+valu
+R1
+Z10 !s110 1686009814
+!i10b 1
+!s100 `El]H]n5[6kHIX9HLYKz52
+R3
+IeNGWHX6ijTZ?@g5XjBIAh1
+R4
+S1
+R0
+Z11 w1684975497
+8D:/processor/Laboratorio 3/ALU/alu/alu.sv
+FD:/processor/Laboratorio 3/ALU/alu/alu.sv
+!i122 6
+L0 1 38
+R5
+r1
+!s85 0
+31
+Z12 !s108 1686009813.000000
+!s107 D:/processor/Laboratorio 3/ALU/alu/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/alu|D:/processor/Laboratorio 3/ALU/alu/alu.sv|
+!i113 1
+R7
+Z13 !s92 -sv -work work {+incdir+D:/processor/Laboratorio 3/ALU/alu}
+R9
+vand_gate
+R1
+R2
+!i10b 1
+!s100 EjXiXn;d[9gM:GeNC0f380
+R3
+IVlEI6ba6VXDD^D5df4bzG0
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv
+!i122 21
+Z14 L0 1 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate.sv|
+!i113 1
+R7
+Z15 !s92 -sv -work work {+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos}
+R9
+vand_gate_n
+R1
+R2
+!i10b 1
+!s100 LAjFLo;i_C81@OaJl6mlY3
+R3
+IeiljKbfFQdFS[Ukk=8=m]2
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv
+!i122 20
+Z16 L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/and_gate_n.sv|
+!i113 1
+R7
+R15
+R9
+varm
+R1
+Z17 !s110 1686009818
+!i10b 1
+!s100 IC@Z[hlSA6lMj<9ljSLD61
+R3
+I3KIb>BHXoHUQ>=W7EC]Je3
+R4
+S1
+R0
+w1685588498
+8D:/processor/arm.sv
+FD:/processor/arm.sv
+!i122 31
+Z18 L0 1 16
+R5
+r1
+!s85 0
+31
+Z19 !s108 1686009818.000000
+!s107 D:/processor/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/arm.sv|
+!i113 1
+R7
+R8
+R9
+vcaflag
+R1
+Z20 !s110 1686009813
+!i10b 1
+!s100 z:fndLH:zCIECBk8;31Ue3
+R3
+I7^2bGf09FNcKD_V3jUI>Q1
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/alu/caflag.sv
+FD:/processor/Laboratorio 3/ALU/alu/caflag.sv
+!i122 5
+Z21 L0 1 12
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/Laboratorio 3/ALU/alu/caflag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/alu|D:/processor/Laboratorio 3/ALU/alu/caflag.sv|
+!i113 1
+R7
+R13
+R9
+vcondcheck
+R1
+Z22 !s110 1686009817
+!i10b 1
+!s100 jE3@Me0Bi]OEoH_84OFAl1
+R3
+I=RQR[c1ef>U7fWeUfoKfX3
+R4
+S1
+R0
+Z23 w1685463224
+Z24 8D:/processor/condlogic.sv
+Z25 FD:/processor/condlogic.sv
+!i122 29
+L0 26 29
+R5
+r1
+!s85 0
+31
+Z26 !s108 1686009817.000000
+Z27 !s107 D:/processor/condlogic.sv|
+Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+R22
+!i10b 1
+!s100 75T_igG7bbQjh;2OU1PFk3
+R3
+Ihd@>Yj;aD^2K;9NJ]5J]h1
+R4
+S1
+R0
+R23
+R24
+R25
+!i122 29
+L0 1 24
+R5
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R17
+!i10b 1
+!s100 eZHTEkX=cZKB;dV?i@S9f3
+R3
+ISi;LAhM_mIfkj8f:h<mQP2
+R4
+S1
+R0
+w1685462765
+8D:/processor/controller.sv
+FD:/processor/controller.sv
+!i122 32
+L0 1 23
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/processor/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R22
+!i10b 1
+!s100 fGB=j4Xdgl3B[L=ogZl[b1
+R3
+I^29b>^zHWcW[0Xke4U5LU3
+R4
+S1
+R0
+w1685817592
+8D:/processor/datapath.sv
+FD:/processor/datapath.sv
+!i122 30
+L0 1 43
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/processor/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R22
+!i10b 1
+!s100 GOeQOzY52nC0GAkH1S9><2
+R3
+Idi[>fX=@ifB3NaS[K_cI]0
+R4
+S1
+R0
+w1685463228
+8D:/processor/decoder.sv
+FD:/processor/decoder.sv
+!i122 28
+L0 3 54
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/processor/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R2
+!i10b 1
+!s100 T_T^ZdaV5P;Z@Q3IZeXmL2
+R3
+IN>omAVi:nRKD<HZ9M1<_13
+R4
+S1
+R0
+w1684792774
+8D:/processor/extend.sv
+FD:/processor/extend.sv
+!i122 24
+Z29 L0 1 15
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/processor/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R22
+!i10b 1
+!s100 Y30iGn[hz9iZ_VKdYz3Kl0
+R3
+IZVF9?[C6FS3Y9e77V1lO;2
+R4
+S1
+R0
+w1684792974
+8D:/processor/flopenr.sv
+FD:/processor/flopenr.sv
+!i122 26
+Z30 L0 2 9
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/processor/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R22
+!i10b 1
+!s100 95>n6Dgke_oJd?0E=3HgE3
+R3
+I2MRRcl^X_LhhAEW9fa]693
+R4
+S1
+R0
+w1684792827
+8D:/processor/flopr.sv
+FD:/processor/flopr.sv
+!i122 25
+R30
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/processor/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vlrl_arithmetic
+R1
+R2
+!i10b 1
+!s100 4MmX4?3QDo^0BNkOe6]381
+R3
+I64TlLK5neGUzF8dHW_8nT3
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv
+!i122 19
+Z31 L0 1 17
+R5
+r1
+!s85 0
+31
+Z32 !s108 1686009815.000000
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_arithmetic.sv|
+!i113 1
+R7
+R15
+R9
+vlrl_logic
+R1
+Z33 !s110 1686009815
+!i10b 1
+!s100 38nbk=hebN;nHo?JDoP690
+R3
+Ib^m3Uo?cJH9P>z8:92G0z3
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv
+!i122 18
+R31
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/lrl_logic.sv|
+!i113 1
+R7
+R15
+R9
+vlsl_arithmetic
+R1
+R33
+!i10b 1
+!s100 dz4jg79mQNoSW^2Ta8BhI3
+R3
+IdFg[_OAKm_XiY]m8:T[6?0
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv
+!i122 17
+R31
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_arithmetic.sv|
+!i113 1
+R7
+R15
+R9
+vlsl_logic
+R1
+R33
+!i10b 1
+!s100 [jThndR_z7hAX_b_N55ck3
+R3
+IeR>E:UKWVg[FV5miiWll73
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv
+!i122 16
+R31
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/lsl_logic.sv|
+!i113 1
+R7
+R15
+R9
+vmux2
+R1
+R22
+!i10b 1
+!s100 kS]e@bmAKOQnSD<D8jmX?0
+R3
+IIBa4`0=]li8D^^cB6zFK_1
+R4
+S1
+R0
+w1684792991
+8D:/processor/mux2.sv
+FD:/processor/mux2.sv
+!i122 27
+L0 1 7
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/processor/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vmux_
+R1
+R20
+!i10b 1
+!s100 3e:aFZPSS?Ez;zV1VTITo0
+R3
+IXbDDF?ALeBmPH2cY>IB1T0
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/alu/mux_.sv
+FD:/processor/Laboratorio 3/ALU/alu/mux_.sv
+!i122 4
+L0 1 27
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/Laboratorio 3/ALU/alu/mux_.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/alu|D:/processor/Laboratorio 3/ALU/alu/mux_.sv|
+!i113 1
+R7
+R13
+R9
+vn_not_gate
+R1
+R33
+!i10b 1
+!s100 AOIDDf7XEWHC;6Q;^Ko]Z2
+R3
+IoHQSYh:C_kB?X^2EIE^cB0
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv
+!i122 15
+L0 1 8
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/n_not_gate.sv|
+!i113 1
+R7
+R15
+R9
+vneflag
+R1
+R20
+!i10b 1
+!s100 E]zS51F0FFOn><g^Z[Jh12
+R3
+IDYgCUl6:PNO4UX:a975E?1
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/alu/neflag.sv
+FD:/processor/Laboratorio 3/ALU/alu/neflag.sv
+!i122 3
+R21
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/Laboratorio 3/ALU/alu/neflag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/alu|D:/processor/Laboratorio 3/ALU/alu/neflag.sv|
+!i113 1
+R7
+R13
+R9
+vor_gate
+R1
+R33
+!i10b 1
+!s100 NzkCP?gL^AW]W0V1hjo]U1
+R3
+I:PaA:<4L;>VKEGe66PPfo3
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv
+!i122 14
+R14
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate.sv|
+!i113 1
+R7
+R15
+R9
+vor_gate_n
+R1
+R33
+!i10b 1
+!s100 BKXJTA52=o?Ji6;:33I1V1
+R3
+I_fTgaPRVoH`2Hbzi><O=A0
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv
+!i122 13
+R16
+R5
+r1
+!s85 0
+31
+R32
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/or_gate_n.sv|
+!i113 1
+R7
+R15
+R9
+vram_1
+R20
+!i10b 1
+!s100 PQ>h3K1hmR_Ja@DA6W_iM0
+R3
+I3YPgQV;?G5e025@NacKc@3
+R4
+R0
+w1685407219
+8D:/processor/ram_1.v
+FD:/processor/ram_1.v
+!i122 0
+L0 40 66
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/ram_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/processor|D:/processor/ram_1.v|
+!i113 1
+Z34 o-vlog01compat -work work
+Z35 !s92 -vlog01compat -work work +incdir+D:/processor
+R9
+vregister_file
+R1
+R2
+!i10b 1
+!s100 ;028Jnl8]CkenCINYW>HH0
+R3
+I[7MV^58?BH=RXn<Kkhc4K3
+R4
+S1
+R0
+w1684792611
+8D:/processor/register_file.sv
+FD:/processor/register_file.sv
+!i122 22
+R18
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/processor/register_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/register_file.sv|
+!i113 1
+R7
+R8
+R9
+vrestador_1bit
+R1
+R10
+!i10b 1
+!s100 KbHim;m7Iina[CGhN17kJ2
+R3
+ID;AQ:<PKP3HW=4InNj_?m3
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv
+FD:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv
+!i122 10
+L0 1 14
+R5
+r1
+!s85 0
+31
+Z36 !s108 1686009814.000000
+!s107 D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador|D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_1bit.sv|
+!i113 1
+R7
+Z37 !s92 -sv -work work {+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador}
+R9
+vrestador_n
+R1
+R10
+!i10b 1
+!s100 15^Q0]]W<1]FE01b<cYRn3
+R3
+IZoU08N<3?c0jNMJ8P3IDK3
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv
+FD:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv
+!i122 9
+Z38 L0 1 18
+R5
+r1
+!s85 0
+31
+R36
+!s107 D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador|D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Restador/restador_n.sv|
+!i113 1
+R7
+R37
+R9
+vrom_22
+R20
+!i10b 1
+!s100 ::GNj<=S1L<OG`H2g0FHU2
+R3
+IFF>W;1j`H[F[m?z_?z<_[1
+R4
+R0
+w1685634318
+8D:/processor/rom_22.v
+FD:/processor/rom_22.v
+!i122 1
+L0 40 61
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/rom_22.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/processor|D:/processor/rom_22.v|
+!i113 1
+R34
+R35
+R9
+vsumador_1bit
+R1
+R10
+!i10b 1
+!s100 dh@^W2R=FcFX4NSl25nU<2
+R3
+I^=FkL`I6?f^2egYH:>=J42
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv
+FD:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv
+!i122 8
+L0 1 10
+R5
+r1
+!s85 0
+31
+R36
+!s107 D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador|D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_1bit.sv|
+!i113 1
+R7
+Z39 !s92 -sv -work work {+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador}
+R9
+vsumador_n
+R1
+R10
+!i10b 1
+!s100 Q5?OYZ7jIH`K59;HBiUBc3
+R3
+Il1aaSU?f]aIhU@0cR2h;i1
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv
+FD:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv
+!i122 7
+R38
+R5
+r1
+!s85 0
+31
+R36
+!s107 D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador|D:/processor/Laboratorio 3/ALU/Operaciones aritmetricas/Sumador/sumador_n.sv|
+!i113 1
+R7
+R39
+R9
+vtestbench_22
+R1
+R17
+!i10b 1
+!s100 iJ31_MYcSXUS:cBbP[c5Z1
+R3
+I:3hX>MPhC3f[ngkFN;eoC1
+R4
+S1
+R0
+w1686009728
+8D:/processor/testbench_22.sv
+FD:/processor/testbench_22.sv
+!i122 34
+L0 3 34
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/processor/testbench_22.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/testbench_22.sv|
+!i113 1
+R7
+R8
+R9
+vtop
+R1
+R17
+!i10b 1
+!s100 =R=YMS`MNB83Gi;nahAQJ3
+R3
+Io>>bd7R0c4IXbIlK_EbV^3
+R4
+S1
+R0
+w1685634329
+8D:/processor/top.sv
+FD:/processor/top.sv
+!i122 33
+L0 1 13
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/processor/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor|D:/processor/top.sv|
+!i113 1
+R7
+R8
+R9
+vxor_gate
+R1
+R33
+!i10b 1
+!s100 nGehhn5AneSb7o@KBzFE`2
+R3
+IV4103Q63c]NIWT;=8:7553
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv
+!i122 12
+R14
+R5
+r1
+!s85 0
+31
+R36
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate.sv|
+!i113 1
+R7
+R15
+R9
+vxor_gate_n
+R1
+R10
+!i10b 1
+!s100 l=VfCX^M[beA7ja>9]mQ00
+R3
+IT1n^XjjWNSMCcJ7n@iFZ[2
+R4
+S1
+R0
+R11
+8D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv
+FD:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv
+!i122 11
+R16
+R5
+r1
+!s85 0
+31
+R36
+!s107 D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/Operandos_logicos|D:/processor/Laboratorio 3/ALU/Operandos_logicos/xor_gate_n.sv|
+!i113 1
+R7
+R15
+R9
+vzeroflag
+R1
+R20
+!i10b 1
+!s100 Koh60Hi0ilj>_`6z7zmd>0
+R3
+I^aD?8dNz3K4BXj43DYC>k0
+R4
+S1
+R0
+w1684975499
+8D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv
+FD:/processor/Laboratorio 3/ALU/alu/zeroflag.sv
+!i122 2
+R29
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/processor/Laboratorio 3/ALU/alu|D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv|
+!i113 1
+R7
+R13
+R9

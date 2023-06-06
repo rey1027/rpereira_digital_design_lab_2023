@@ -47,7 +47,6 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/processor {D:/processor/ram_1.v}
 vlog -vlog01compat -work work +incdir+D:/processor {D:/processor/rom_22.v}
-vlog -sv -work work +incdir+D:/processor {D:/processor/testbench_22.sv}
 vlog -sv -work work +incdir+D:/processor/Laboratorio\ 3/ALU/alu {D:/processor/Laboratorio 3/ALU/alu/zeroflag.sv}
 vlog -sv -work work +incdir+D:/processor/Laboratorio\ 3/ALU/alu {D:/processor/Laboratorio 3/ALU/alu/neflag.sv}
 vlog -sv -work work +incdir+D:/processor/Laboratorio\ 3/ALU/alu {D:/processor/Laboratorio 3/ALU/alu/mux_.sv}
@@ -81,3 +80,11 @@ vlog -sv -work work +incdir+D:/processor {D:/processor/arm.sv}
 vlog -sv -work work +incdir+D:/processor {D:/processor/controller.sv}
 vlog -sv -work work +incdir+D:/processor {D:/processor/top.sv}
 
+vlog -sv -work work +incdir+D:/processor {D:/processor/testbench_22.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench_22
+
+add wave *
+view structure
+view signals
+run -all
