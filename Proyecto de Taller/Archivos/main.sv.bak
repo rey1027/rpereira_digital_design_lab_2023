@@ -1,0 +1,14 @@
+module main(input clk,
+				input rst,
+				input boton,
+				output logic vgaclk,
+				output logic vga_hsync, vga_vsync,
+				output logic sync_b, sync_blank,
+				output logic [7:0] red,green,blue);
+				
+				
+				top dut(clk, reset, WriteData, DataAdr, MemWrite, RAMout, ROMout);
+				
+				vga vga1(clk,vgaclk,rst,RAMout,red,green,blue,vga_hsync,vga_vsync,sync_blank,sync_b);
+				
+endmodule
