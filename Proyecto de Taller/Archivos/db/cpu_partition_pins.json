@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vgaclk",
+					"strict" : false
+				},
+				{
+					"name" : "vga_hsync",
+					"strict" : false
+				},
+				{
+					"name" : "vga_vsync",
+					"strict" : false
+				},
+				{
+					"name" : "sync_b",
+					"strict" : false
+				},
+				{
+					"name" : "sync_blank",
+					"strict" : false
+				},
+				{
+					"name" : "red[0]",
+					"strict" : false
+				},
+				{
+					"name" : "red[4]",
+					"strict" : false
+				},
+				{
+					"name" : "red[5]",
+					"strict" : false
+				},
+				{
+					"name" : "green[0]",
+					"strict" : false
+				},
+				{
+					"name" : "green[4]",
+					"strict" : false
+				},
+				{
+					"name" : "green[5]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
