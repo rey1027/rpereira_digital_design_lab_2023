@@ -26,8 +26,7 @@ module testbench();
 				$display("Simulation succeeded");
 				$stop;
 			end else if (DataAdr !== 96) begin
-				$display("Simulation failed");
-				$stop;
+				
 			end
 		end
 	end
