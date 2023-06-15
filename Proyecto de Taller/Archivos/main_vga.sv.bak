@@ -1,0 +1,92 @@
+module main_vga(clk,clk_25,rst,red,green,blue,vga_hsync,vga_vsync,sync_blank,sync_b);
+	input clk,rst;
+	//input logic [7:0] matriz [0:7][0:7];
+	output logic [7:0] red, blue, green; 
+	output logic vga_hsync,vga_vsync,sync_blank,sync_b; //Control de signal
+	logic [9:0]hs;
+	logic [9:0]vs;
+	output logic clk_25;
+	
+	clkdiv div(clk,clk_25);
+			
+	vgaController cgr(clk_25,vga_hsync,vga_vsync,sync_blank,sync_b,hs,vs);
+	
+	logic [7:0] matriz [0:7][0:7];
+	
+	assign matriz[0][0] = 8'b00000010;
+   assign matriz[0][1] = 8'b00000011;
+   assign matriz[0][2] = 8'b00000100;
+   assign matriz[0][3] = 8'b00000101;
+	assign matriz[0][4] = 8'b00000110;
+   assign matriz[0][5] = 8'b00000111;
+   assign matriz[0][6] = 8'b00001000;
+   assign matriz[0][7] = 8'b00001001;
+	
+	assign matriz[1][0] = 8'b00001010;
+   assign matriz[1][1] = 8'b00001011;
+   assign matriz[1][2] = 8'b00001100;
+   assign matriz[1][3] = 8'b00001101;
+	assign matriz[1][4] = 8'b00001110;
+   assign matriz[1][5] = 8'b00001111;
+   assign matriz[1][6] = 8'b00010000;
+   assign matriz[1][7] = 8'b00010001;
+	
+	assign matriz[2][0] = 8'b00010010;
+   assign matriz[2][1] = 8'b00010011;
+   assign matriz[2][2] = 8'b00010100;
+   assign matriz[2][3] = 8'b00010101;
+	assign matriz[2][4] = 8'b00010110;
+   assign matriz[2][5] = 8'b00010111;
+   assign matriz[2][6] = 8'b00011000;
+   assign matriz[2][7] = 8'b00011001;
+	
+	assign matriz[3][0] = 8'b00011010;
+   assign matriz[3][1] = 8'b00011011;
+   assign matriz[3][2] = 8'b00011100;
+   assign matriz[3][3] = 8'b00011101;
+	assign matriz[3][4] = 8'b00011110;
+   assign matriz[3][5] = 8'b00011111;
+   assign matriz[3][6] = 8'b00100000;
+   assign matriz[3][7] = 8'b00100001;
+	
+	assign matriz[4][0] = 8'b00100010;
+   assign matriz[4][1] = 8'b00100011;
+   assign matriz[4][2] = 8'b00100100;
+   assign matriz[4][3] = 8'b00100101;
+	assign matriz[4][4] = 8'b00100110;
+   assign matriz[4][5] = 8'b00100111;
+   assign matriz[4][6] = 8'b00101000;
+   assign matriz[4][7] = 8'b00101001;
+	
+	assign matriz[5][0] = 8'b00101010;
+   assign matriz[5][1] = 8'b00101011;
+   assign matriz[5][2] = 8'b00101100;
+   assign matriz[5][3] = 8'b00101101;
+	assign matriz[5][4] = 8'b00101110;
+   assign matriz[5][5] = 8'b00101111;
+   assign matriz[5][6] = 8'b00110000;
+   assign matriz[5][7] = 8'b00110001;
+	
+	assign matriz[6][0] = 8'b00110010;
+   assign matriz[6][1] = 8'b00110011;
+   assign matriz[6][2] = 8'b00110100;
+   assign matriz[6][3] = 8'b00110101;
+	assign matriz[6][4] = 8'b00110110;
+   assign matriz[6][5] = 8'b00110111;
+   assign matriz[6][6] = 8'b00111000;
+   assign matriz[6][7] = 8'b00111001;
+	
+	assign matriz[7][0] = 8'b00111010;
+   assign matriz[7][1] = 8'b00111011;
+   assign matriz[7][2] = 8'b00111100;
+   assign matriz[7][3] = 8'b00111101;
+	assign matriz[7][4] = 8'b00111110;
+   assign matriz[7][5] = 8'b00111111;
+   assign matriz[7][6] = 8'b01000000;
+   assign matriz[7][7] = 8'b01000001;
+
+
+	screenDraw sd2(rst,matriz,hs,vs,red,green,blue);
+	
+	
+endmodule

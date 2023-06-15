@@ -1,0 +1,81 @@
+module tablero (
+  input logic [7:0] matriz [0:7][0:7],
+  output logic [7:0] states[63:0]
+);
+
+
+     assign states[0] = matriz[0][0];
+     assign states[1] = matriz[0][1];
+     assign states[2] = matriz[0][2];
+     assign states[3] = matriz[0][3];
+     assign states[4] = matriz[0][4];
+     assign states[5] = matriz[0][5];
+     assign states[6] = matriz[0][6];
+     assign states[7] = matriz[0][7];
+	  
+	  assign states[8] = matriz[1][0];
+     assign states[9] = matriz[1][1];
+     assign states[10] = matriz[1][2];
+     assign states[11] = matriz[1][3];
+     assign states[12] = matriz[1][4];
+     assign states[13] = matriz[1][5];
+     assign states[14] = matriz[1][6];
+     assign states[15] = matriz[1][7];
+	  
+	  assign states[16] = matriz[2][0];
+     assign states[17] = matriz[2][1];
+     assign states[18] = matriz[2][2];
+     assign states[19] = matriz[2][3];
+     assign states[20] = matriz[2][4];
+     assign states[21] = matriz[2][5];
+     assign states[22] = matriz[2][6];
+     assign states[23] = matriz[2][7];
+	  
+	  assign states[24] = matriz[3][0];
+     assign states[25] = matriz[3][1];
+     assign states[26] = matriz[3][2];
+     assign states[27] = matriz[3][3];
+     assign states[28] = matriz[3][4];
+     assign states[29] = matriz[3][5];
+     assign states[30] = matriz[3][6];
+     assign states[31] = matriz[3][7];
+	  
+	  assign states[32] = matriz[4][0];
+     assign states[33] = matriz[4][1];
+     assign states[34] = matriz[4][2];
+     assign states[35] = matriz[4][3];
+     assign states[36] = matriz[4][4];
+     assign states[37] = matriz[4][5];
+     assign states[38] = matriz[4][6];
+     assign states[39] = matriz[4][7];
+	  
+	  assign states[40] = matriz[5][0];
+     assign states[41] = matriz[5][1];
+     assign states[42] = matriz[5][2];
+     assign states[43] = matriz[5][3];
+     assign states[44] = matriz[5][4];
+     assign states[45] = matriz[5][5];
+     assign states[46] = matriz[5][6];
+     assign states[47] = matriz[5][7];
+	  
+	  assign states[48] = matriz[6][0];
+     assign states[49] = matriz[6][1];
+     assign states[50] = matriz[6][2];
+     assign states[51] = matriz[6][3];
+     assign states[52] = matriz[6][4];
+     assign states[53] = matriz[6][5];
+     assign states[54] = matriz[6][6];
+     assign states[55] = matriz[6][7];
+	  
+	  assign states[56] = matriz[7][0];
+     assign states[57] = matriz[7][1];
+     assign states[58] = matriz[7][2];
+     assign states[59] = matriz[7][3];
+     assign states[60] = matriz[7][4];
+     assign states[61] = matriz[7][5];
+     assign states[62] = matriz[7][6];
+     assign states[63] = matriz[7][7];
+     
+     
+
+endmodule

@@ -1,0 +1,665 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1686805883
+!i10b 1
+!s100 82l90MmjY]dm8mkQL4j3]3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQnLzFX;I0go;_>IQAYCn=2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1685586756
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/adder.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/adder.sv
+!i122 19
+L0 1 9
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1686805883.000000
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos}
+Z9 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 1=GcTPf7dHm;^;2l>ai1B2
+R3
+I<c@^h_gg12:DAd]jh<XIg1
+R4
+S1
+R0
+w1686721274
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/alu.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/alu.sv
+!i122 18
+L0 1 39
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/alu.sv|
+!i113 1
+R7
+R8
+R9
+varm
+R1
+R2
+!i10b 1
+!s100 kbfCG;W@YCF?JVQEFQ6gK0
+R3
+I331JSDE[R9PIK>fm;:m[b1
+R4
+S1
+R0
+w1686442197
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/arm.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/arm.sv
+!i122 17
+Z10 L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/arm.sv|
+!i113 1
+R7
+R8
+R9
+vCheckPos
+R1
+R2
+!i10b 1
+!s100 D?`@l53U^IOg7bzEzXM8g3
+R3
+IhJbIDZ=RcJ604Y^YjQ<l61
+R4
+S1
+R0
+w1686786483
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/CheckPos.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/CheckPos.sv
+!i122 16
+Z11 L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/CheckPos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/CheckPos.sv|
+!i113 1
+R7
+R8
+R9
+n@check@pos
+vclkdiv
+R1
+R2
+!i10b 1
+!s100 XeWzk5II4AAFLPm5DJ=4E0
+R3
+IY8aC:F`HGi46D8F48`dUQ1
+R4
+S1
+R0
+w1686784777
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/clkdiv.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/clkdiv.sv
+!i122 15
+L0 1 11
+R5
+r1
+!s85 0
+31
+Z12 !s108 1686805882.000000
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/clkdiv.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/clkdiv.sv|
+!i113 1
+R7
+R8
+R9
+vcondcheck
+R1
+Z13 !s110 1686805882
+!i10b 1
+!s100 Y0iZY]=6=A^CO57gi6;N^0
+R3
+IWB>:K;4LUM?e?B5WHX@N03
+R4
+S1
+R0
+Z14 w1686703192
+Z15 8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/condlogic.sv
+Z16 FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/condlogic.sv
+!i122 14
+L0 29 30
+R5
+r1
+!s85 0
+31
+R12
+Z17 !s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/condlogic.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+R13
+!i10b 1
+!s100 >K:Xc1RVdY8WfKAlhV3NS3
+R3
+IS[dkE6D]Z]lRL=fJ2eaL[2
+R4
+S1
+R0
+R14
+R15
+R16
+!i122 14
+L0 1 27
+R5
+r1
+!s85 0
+31
+R12
+R17
+R18
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R13
+!i10b 1
+!s100 TAVX[VMT80bz29]4>J3?o1
+R3
+Imf;kfFJi96LN??]V6B7F@2
+R4
+S1
+R0
+w1686710732
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/controller.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/controller.sv
+!i122 13
+R10
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R13
+!i10b 1
+!s100 BEFcZKlZO_l3nKT^?G<[d3
+R3
+I6IQVZ7Eg]OzP03kFQiCl82
+R4
+S1
+R0
+w1686375790
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/datapath.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/datapath.sv
+!i122 12
+L0 1 50
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R13
+!i10b 1
+!s100 dJTH9d8JbTXmLFnkXkXz@3
+R3
+IMbj;J>nHbaB_]LGMe[JSB2
+R4
+S1
+R0
+w1686721116
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv
+!i122 11
+L0 1 59
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vdmem
+R1
+R13
+!i10b 1
+!s100 PIo@Q8_U1j=:X?K]Aj0f?0
+R3
+IzH71;a=XM=0`hzdVNXEZA0
+R4
+S1
+R0
+w1686782747
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/dmem.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/dmem.sv
+!i122 10
+Z19 L0 1 15
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/dmem.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R13
+!i10b 1
+!s100 =<6N6]ACE]M=eVhhdG4Vc2
+R3
+I@FPBh;SSiO?lW9a8]S>UX3
+R4
+S1
+R0
+w1685586710
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/extend.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/extend.sv
+!i122 9
+L0 1 14
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R13
+!i10b 1
+!s100 ^M9DX=LTTSL[?6@mM6KYf0
+R3
+IRb72MmG9LXnSl^QjPcm8J0
+R4
+S1
+R0
+w1685586614
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopenr.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopenr.sv
+!i122 8
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R13
+!i10b 1
+!s100 O[7JFKZPJ7Di;LZ=UJN[N2
+R3
+IQ6MU<9z]=aeNTTf>HXAEU2
+R4
+S1
+R0
+w1685586666
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopr.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopr.sv
+!i122 7
+R11
+R5
+r1
+!s85 0
+31
+Z20 !s108 1686805881.000000
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+R2
+!i10b 1
+!s100 _Y`KhDJ?VWYD2IkUDGB=51
+R3
+I7oXeA97k>=[50Egbba8d[0
+R4
+S1
+R0
+w1686804665
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/imem.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/imem.sv
+!i122 22
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+R2
+!i10b 1
+!s100 ;Life_o]IZG5IRRP@INY`2
+R3
+I6Q_C`[AWM2H]^<Vg5TFYB2
+R4
+S1
+R0
+w1686804469
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main.sv
+!i122 20
+Z21 L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main.sv|
+!i113 1
+R7
+R8
+R9
+vmain_vga
+R1
+Z22 !s110 1686805881
+!i10b 1
+!s100 `4nfK?Ei^g;D5M]dB<C>A0
+R3
+I`KJ=^XgNF:Hmb^fTCVd_V0
+R4
+S1
+R0
+w1686804470
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main_vga.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main_vga.sv
+!i122 6
+Z23 L0 1 17
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main_vga.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/main_vga.sv|
+!i113 1
+R7
+R8
+R9
+vmemory
+R1
+R22
+!i10b 1
+!s100 WJaIcgB<PH?k`j^Hd^Lm20
+R3
+ImW3AGaeVOjChaA?FYdeC63
+R4
+S1
+R0
+w1686800183
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/memory.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/memory.sv
+!i122 5
+L0 1 26
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/memory.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R22
+!i10b 1
+!s100 z[W@h;8OJV8ISY^9aZPL12
+R3
+Ijg5ig;95d3V73;mzFII:[1
+R4
+S1
+R0
+w1685586554
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/mux2.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/mux2.sv
+!i122 4
+L0 1 6
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vregfile
+R1
+R22
+!i10b 1
+!s100 S^6FZFe9TDf1kEU<01b[81
+R3
+I@>]jVC^WXzj5j19]4a96a1
+R4
+S1
+R0
+w1686347361
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/regfile.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/regfile.sv
+!i122 3
+R23
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vROM
+R1
+R2
+!i10b 1
+!s100 BcjG;ijnKEoR2_OgkNoWj2
+R3
+Id67Qb0_6GmzIl3_`L]j=?0
+R4
+S1
+R0
+w1686804666
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/ROM.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/ROM.sv
+!i122 21
+R19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/ROM.sv|
+!i113 1
+R7
+R8
+R9
+n@r@o@m
+vscreenDraw
+R1
+R22
+!i10b 1
+!s100 X6DeL[YM@;31FOolz[2VS1
+R3
+IHX6M;>]]EXL>HnRZ]FAZ[1
+R4
+S1
+R0
+w1686804707
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/screenDraw.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/screenDraw.sv
+!i122 2
+L0 1 38
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/screenDraw.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/screenDraw.sv|
+!i113 1
+R7
+R8
+R9
+nscreen@draw
+vtest_alu
+R1
+R2
+!i10b 1
+!s100 3Z8UHzE>m@eMB]NSW<E9Y2
+R3
+If:1bggAPOGz:P44`:H6cg3
+R4
+S1
+R0
+w1686802256
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/test_alu.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/test_alu.sv
+!i122 23
+L0 1 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/test_alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/test_alu.sv|
+!i113 1
+R7
+R8
+R9
+vtop
+R1
+R22
+!i10b 1
+!s100 ToO3Rk6VdKQ891?Y31O2k3
+R3
+I?Y^e1c<MGTaOHS7MPW[1l0
+R4
+S1
+R0
+w1686785499
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/top.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/top.sv
+!i122 1
+R21
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/top.sv|
+!i113 1
+R7
+R8
+R9
+vvgaController
+R1
+R22
+!i10b 1
+!s100 clm=c^WHOCVBhE8MDfJ^C0
+R3
+IQ8hzE2LY_5VaUVVV<44`D1
+R4
+S1
+R0
+w1686712356
+8C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/vgaController.sv
+FC:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/vgaController.sv
+!i122 0
+L0 1 30
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/vgaController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos|C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/vgaController.sv|
+!i113 1
+R7
+R8
+R9
+nvga@controller

@@ -1,0 +1,5 @@
+Warning (10268): Verilog HDL information at SyncXY.sv(4): always construct contains both blocking and non-blocking assignments File: C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/SyncXY.sv Line: 4
+Warning (10268): Verilog HDL information at mux_dibujar.sv(11): always construct contains both blocking and non-blocking assignments File: C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/mux_dibujar.sv Line: 11
+Warning (10273): Verilog HDL warning at extend.sv(12): extended using "x" or "z" File: C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/extend.sv Line: 12
+Warning (10273): Verilog HDL warning at decoder.sv(28): extended using "x" or "z" File: C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv Line: 28
+Warning (10273): Verilog HDL warning at decoder.sv(43): extended using "x" or "z" File: C:/Users/Rachel/Desktop/Proyecto de Taller/Archivos/decoder.sv Line: 43
